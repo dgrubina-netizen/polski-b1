@@ -1,0 +1,2242 @@
+[
+  {
+    "id": "adult-2023-april",
+    "label": "Апрель 2023",
+    "date": "15–16 апреля 2023",
+    "source": "https://certyfikatpolski.pl/wp-content/uploads/2025/07/2023_04_15_16_B1_arkusz_egzaminacyjny.pdf",
+    "exercises": [
+      {
+        "id": "adult-2023-april-i",
+        "number": "I",
+        "topic": "Формы слов и падежи",
+        "title": "Формы слов и падежи",
+        "passage": "W rocznicę urodzin Canaletta, Zamek Królewski w Warszawie zorganizował wystawę obrazów osiemnastowiecznego twórcy. Jego artystyczną drogę prezentował bardzo bogaty zbiór dzieł. Pierwsza część (tej, te, tę)1 kolekcji to prace związane z Wenecją, a także z (podróżach, podróżom, podróżami)2 młodego malarza do innych włoskich (miastach, miast, miasta)3. Druga część wystawy dotyczy pobytu artysty w Niemczech. To był kraj, w (którego, które, którym)4 mieszkał i pracował przez ponad dwadzieścia lat. Ostatni okres swojego życia Canaletto spędził w Warszawie. Tutaj malował dla (polskiego, polskiemu, polska)5 króla, Stanisława Augusta. W (salę, sale, sali)6 Zamku Królewskiego ludzie nadal z zachwytem przyglądają się (obrazom, obrazy, obrazami)7z XVIII wieku, na których stolica często wygląda prawie identycznie jak dzisiaj. Eksperci przygotowali (specjalnego, specjalne, specjalny)8 katalog wystawy, napisany między innymi w wersji (angielskie, angielskiej, angielską)9. Można (go, ich, niego)10 kupić w zamkowym sklepie lub na stronie internetowej muzeum.",
+        "questions": [
+          {
+            "sentence": "Pierwsza część ___ kolekcji to prace związane z Wenecją, a także z 〔2〕 młodego malarza do innych włoskich 〔3〕.",
+            "options": [
+              "tej",
+              "te",
+              "tę"
+            ],
+            "answer": 0,
+            "explain": "Część чего? Родительный падеж: tej kolekcji."
+          },
+          {
+            "sentence": "Pierwsza część 〔1〕 kolekcji to prace związane z Wenecją, a także z ___ młodego malarza do innych włoskich 〔3〕.",
+            "options": [
+              "podróżach",
+              "podróżom",
+              "podróżami"
+            ],
+            "answer": 2,
+            "explain": "Предлог z в значении «с» требует творительного: z podróżami."
+          },
+          {
+            "sentence": "Pierwsza część 〔1〕 kolekcji to prace związane z Wenecją, a także z 〔2〕 młodego malarza do innych włoskich ___ .",
+            "options": [
+              "miastach",
+              "miast",
+              "miasta"
+            ],
+            "answer": 1,
+            "explain": "Do требует родительного множественного числа: miast."
+          },
+          {
+            "sentence": "To był kraj, w ___ mieszkał i pracował przez ponad dwadzieścia lat.",
+            "options": [
+              "którego",
+              "które",
+              "którym"
+            ],
+            "answer": 2,
+            "explain": "W котором — местный падеж: w którym."
+          },
+          {
+            "sentence": "Tutaj malował dla ___ króla, Stanisława Augusta.",
+            "options": [
+              "polskiego",
+              "polskiemu",
+              "polska"
+            ],
+            "answer": 0,
+            "explain": "Dla требует родительного: dla polskiego króla."
+          },
+          {
+            "sentence": "W ___ Zamku Królewskiego ludzie nadal z zachwytem przyglądają się 〔7〕z XVIII wieku, na których stolica często wygląda prawie identycznie jak dzisiaj.",
+            "options": [
+              "salę",
+              "sale",
+              "sali"
+            ],
+            "answer": 2,
+            "explain": "Место: w sali, местный падеж."
+          },
+          {
+            "sentence": "W 〔6〕 Zamku Królewskiego ludzie nadal z zachwytem przyglądają się ___ z XVIII wieku, na których stolica często wygląda prawie identycznie jak dzisiaj.",
+            "options": [
+              "obrazom",
+              "obrazy",
+              "obrazami"
+            ],
+            "answer": 0,
+            "explain": "Przyglądać się кому/чему: дательный падеж obrazom."
+          },
+          {
+            "sentence": "Eksperci przygotowali ___ katalog wystawy, napisany między innymi w wersji 〔9〕.",
+            "options": [
+              "specjalnego",
+              "specjalne",
+              "specjalny"
+            ],
+            "answer": 2,
+            "explain": "Винительный мужского неодушевлённого рода: specjalny katalog."
+          },
+          {
+            "sentence": "Eksperci przygotowali 〔8〕 katalog wystawy, napisany między innymi w wersji ___ .",
+            "options": [
+              "angielskie",
+              "angielskiej",
+              "angielską"
+            ],
+            "answer": 1,
+            "explain": "W wersji angielskiej — местный падеж женского рода."
+          },
+          {
+            "sentence": "Można ___ kupić w zamkowym sklepie lub na stronie internetowej muzeum.",
+            "options": [
+              "go",
+              "ich",
+              "niego"
+            ],
+            "answer": 0,
+            "explain": "Katalog заменяется винительным местоимением go."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-april-ii",
+        "number": "II",
+        "topic": "Союзы",
+        "title": "Союзы",
+        "passage": "żeby chociaż lecz oraz więc który gdy Uczymy się od urodzenia aż do śmierci, lecz z problemem dużej ilości nauki spotykamy się głównie w edukacji szkolnej. Lekcji jest niemało i są za krótkie, …………………………….. 1 wszystkiego nauczyć się w szkole. Zadania domowe, przygotowanie do testów są bardzo ważne, …………………………….. 2 uczniowie całe popołudnia spędzają w domu nad książkami. Chodzą też na wiele zajęć dodatkowych: na kursy językowe, treningi sportowe …………………………….. 3 na różne warsztaty artystyczne. Wszyscy mają dostęp do internetu, …………………………….. 4 także zabiera czas. Wiemy, że nawet prostych rzeczy trudno się nauczyć, …………………………….. 5 człowiek jest zmęczony. Jakie są rozwiązania tych problemów? Jak się uczyć nie tylko szybko, ale i skutecznie?",
+        "questions": [
+          {
+            "sentence": "Lekcji jest niemało i są za krótkie, ___ wszystkiego nauczyć się w szkole.",
+            "options": [
+              "żeby",
+              "chociaż",
+              "lecz",
+              "oraz",
+              "więc",
+              "który",
+              "gdy"
+            ],
+            "answer": 0,
+            "explain": "Za krótkie, żeby — слишком короткие, чтобы."
+          },
+          {
+            "sentence": "Zadania domowe, przygotowanie do testów są bardzo ważne, ___ uczniowie całe popołudnia spędzają w domu nad książkami.",
+            "options": [
+              "żeby",
+              "chociaż",
+              "lecz",
+              "oraz",
+              "więc",
+              "który",
+              "gdy"
+            ],
+            "answer": 4,
+            "explain": "Więc вводит следствие: поэтому."
+          },
+          {
+            "sentence": "Chodzą też na wiele zajęć dodatkowych: na kursy językowe, treningi sportowe ___ na różne warsztaty artystyczne.",
+            "options": [
+              "żeby",
+              "chociaż",
+              "lecz",
+              "oraz",
+              "więc",
+              "który",
+              "gdy"
+            ],
+            "answer": 3,
+            "explain": "Oraz соединяет однородные дополнения."
+          },
+          {
+            "sentence": "Wszyscy mają dostęp do internetu, ___ także zabiera czas.",
+            "options": [
+              "żeby",
+              "chociaż",
+              "lecz",
+              "oraz",
+              "więc",
+              "który",
+              "gdy"
+            ],
+            "answer": 5,
+            "explain": "Który относится к internet мужского рода."
+          },
+          {
+            "sentence": "Wiemy, że nawet prostych rzeczy trudno się nauczyć, ___ człowiek jest zmęczony.",
+            "options": [
+              "żeby",
+              "chociaż",
+              "lecz",
+              "oraz",
+              "więc",
+              "który",
+              "gdy"
+            ],
+            "answer": 6,
+            "explain": "Gdy вводит обстоятельство времени: когда."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-april-iii",
+        "number": "III",
+        "topic": "Степени сравнения",
+        "title": "Степени сравнения",
+        "passage": "Z roku na rok ceny mieszkań stają się wyższe , zarobki Polaków spadają, więc trudno im dostać kredyt w banku. Z tych powodów liczba kupionych mieszkań jest obecnie (niżej, niższą, najniższa)1. Coraz (większy, więcej, najwięcej)2 młodych ludzi decyduje się na mieszkanie z rodzicami lub wynajem małego, a tym samym (taniej, tańszego, tańszy)3lokalu. Ekonomiści twierdzą, że przyszły rok może być dla branży budowlanej (gorzej, gorszy, najgorszy)4 w historii. Przewidują, że zainteresowanie klientów zakupem nowego mieszkania może być nawet o 40 procent (mniej, mniejsze, mniejsi)5 niż w 2022 roku.",
+        "questions": [
+          {
+            "sentence": "Z tych powodów liczba kupionych mieszkań jest obecnie ___ .",
+            "options": [
+              "niżej",
+              "niższą",
+              "najniższa"
+            ],
+            "answer": 2,
+            "explain": "Сказуемое согласуется с liczba: najniższa."
+          },
+          {
+            "sentence": "Coraz ___ młodych ludzi decyduje się na mieszkanie z rodzicami lub wynajem małego, a tym samym 〔3〕lokalu.",
+            "options": [
+              "większy",
+              "więcej",
+              "najwięcej"
+            ],
+            "answer": 1,
+            "explain": "Coraz więcej — всё больше; людей — родительный падеж."
+          },
+          {
+            "sentence": "Coraz 〔2〕 młodych ludzi decyduje się na mieszkanie z rodzicami lub wynajem małego, a tym samym ___ lokalu.",
+            "options": [
+              "taniej",
+              "tańszego",
+              "tańszy"
+            ],
+            "answer": 1,
+            "explain": "Родительный падеж от tańszy: tańszego lokalu."
+          },
+          {
+            "sentence": "Ekonomiści twierdzą, że przyszły rok może być dla branży budowlanej ___ w historii.",
+            "options": [
+              "gorzej",
+              "gorszy",
+              "najgorszy"
+            ],
+            "answer": 2,
+            "explain": "W historii означает среди всех периодов: najgorszy."
+          },
+          {
+            "sentence": "Przewidują, że zainteresowanie klientów zakupem nowego mieszkania może być nawet o 40 procent ___ niż w 2022 roku.",
+            "options": [
+              "mniej",
+              "mniejsze",
+              "mniejsi"
+            ],
+            "answer": 1,
+            "explain": "Zainteresowanie — средний род: mniejsze."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-april-iv",
+        "number": "IV",
+        "topic": "Времена глаголов",
+        "title": "Времена глаголов",
+        "passage": "„Kiedyś było lepiej” – ciągle powtarzają nasi dziadkowie i babcie. „Teraz młodzież ……………………………………………………….. 1 (patrzyć)1tylko na ekrany smartfonów i komputerów. Chłopcy nie ……………………………………………………….. 2 (widzieć)2świata poza internetem, dziewczyny ……………………………………………………….. 3 (ubierać się)3 w za krótkie bluzki i spódniczki lub w za ciasne spodnie. Ja w młodości nigdy takich nie ……………………………………………………….. 4 (nosić)4!” – te słowa bardzo często ……………………………………………………….. 5 (ja – słyszeć)5 dziś od mojej babci. „Kiedyś chętnie ze sobą ……………………………………………………….. 6 (my – rozmawiać)6, a młodzież bardziej ……………………………………………………….. 7 (szanować)7stare tradycje i obyczaje” – dodaje jeszcze dziadek. Wiem jednak, że dawniej dorośli także ……………………………………………………….. 8 (skarżyć się)8 na swoje dzieci, a starsze panie ……………………………………………………….. 9 (krytykować)9 zachowanie młodych. No cóż, współcześni dziadkowie ……………………………………………………….. 10 (narzekać)10 tak samo jak ich przodkowie.",
+        "questions": [
+          {
+            "sentence": "„Teraz młodzież ___ tylko na ekrany smartfonów i komputerów. (patrzyć)",
+            "answers": [
+              "patrzy"
+            ],
+            "explain": "Młodzież грамматически единственное число: patrzy."
+          },
+          {
+            "sentence": "Chłopcy nie ___ świata poza internetem, dziewczyny 〔3〕 (ubierać się) w za krótkie bluzki i spódniczki lub w za ciasne spodnie. (widzieć)",
+            "answers": [
+              "widzą"
+            ],
+            "explain": "Chłopcy — множественное число: widzą."
+          },
+          {
+            "sentence": "Chłopcy nie 〔2〕 (widzieć)świata poza internetem, dziewczyny ___ w za krótkie bluzki i spódniczki lub w za ciasne spodnie. (ubierać się)",
+            "answers": [
+              "ubierają się",
+              "się ubierają"
+            ],
+            "explain": "Dziewczyny: ubierają się, настоящее время."
+          },
+          {
+            "sentence": "Ja w młodości nigdy takich nie ___ !” – te słowa bardzo często 〔5〕 (ja – słyszeć) dziś od mojej babci. (nosić)",
+            "answers": [
+              "nosiłam"
+            ],
+            "explain": "Говорит бабушка: носила — nosiłam."
+          },
+          {
+            "sentence": "Ja w młodości nigdy takich nie 〔4〕 (nosić)!” – te słowa bardzo często ___ dziś od mojej babci. (ja – słyszeć)",
+            "answers": [
+              "słyszę"
+            ],
+            "explain": "Ja в настоящем времени: słyszę."
+          },
+          {
+            "sentence": "„Kiedyś chętnie ze sobą ___ , a młodzież bardziej 〔7〕 (szanować)stare tradycje i obyczaje” – dodaje jeszcze dziadek. (my – rozmawiać)",
+            "answers": [
+              "rozmawialiśmy"
+            ],
+            "explain": "My в прошедшем: rozmawialiśmy; для женской группы rozmawiałyśmy."
+          },
+          {
+            "sentence": "„Kiedyś chętnie ze sobą 〔6〕 (my – rozmawiać), a młodzież bardziej ___ stare tradycje i obyczaje” – dodaje jeszcze dziadek. (szanować)",
+            "answers": [
+              "szanowała"
+            ],
+            "explain": "Młodzież — женский род единственного числа: szanowała."
+          },
+          {
+            "sentence": "Wiem jednak, że dawniej dorośli także ___ na swoje dzieci, a starsze panie 〔9〕 (krytykować) zachowanie młodych. (skarżyć się)",
+            "answers": [
+              "skarżyli się",
+              "się skarżyli"
+            ],
+            "explain": "Dorośli — мужская личная группа: skarżyli się."
+          },
+          {
+            "sentence": "Wiem jednak, że dawniej dorośli także 〔8〕 (skarżyć się) na swoje dzieci, a starsze panie ___ zachowanie młodych. (krytykować)",
+            "answers": [
+              "krytykowały"
+            ],
+            "explain": "Panie — немужская личная группа: krytykowały."
+          },
+          {
+            "sentence": "No cóż, współcześni dziadkowie ___ tak samo jak ich przodkowie. (narzekać)",
+            "answers": [
+              "narzekają"
+            ],
+            "explain": "Dziadkowie в настоящем времени: narzekają."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-april-v",
+        "number": "V",
+        "topic": "Вопросительные слова",
+        "title": "Вопросительные слова",
+        "passage": "Beata codziennie słucha radia. - Czego Beata codziennie słucha? - Radia. 1. Zosia trzy razy w tygodniu chodzi na basen. - ………………………………………………………..…………….. Zosia chodzi na basen? - Trzy razy w tygodniu. 2. Poinformowaliśmy ciocię Basię, że przyjdziemy jutro. - ………………………………………………………..…………….. poinformowaliście, że przyjdziecie jutro? - Ciocię Basię. 3. Janek kupił tort z owocami egzotycznymi. - ………………………………………………………..…………….. owocami Janek kupił tort? - Z egzotycznymi. 4. Matka nie wyprała ubrania syna. - ………………………………………………………..…………….. ubrania nie wyprała matka? - Syna. 5. Marysia przyszła do szkoły na drugą lekcję. - ………………………………………………………..…………….. lekcję Marysia przyszła do szkoły? - Na drugą.",
+        "questions": [
+          {
+            "sentence": "Zosia trzy razy w tygodniu chodzi na basen. - ___ Zosia chodzi na basen? - Trzy razy w tygodniu.",
+            "answers": [
+              "jak często"
+            ],
+            "explain": "Частота действия: jak często?"
+          },
+          {
+            "sentence": "Poinformowaliśmy ciocię Basię, że przyjdziemy jutro. - ___ poinformowaliście, że przyjdziecie jutro? - Ciocię Basię.",
+            "answers": [
+              "kogo"
+            ],
+            "explain": "Poinformować кого: kogo?"
+          },
+          {
+            "sentence": "Janek kupił tort z owocami egzotycznymi. - ___ owocami Janek kupił tort? - Z egzotycznymi.",
+            "answers": [
+              "z jakimi"
+            ],
+            "explain": "Z owocami — творительный падеж: z jakimi?"
+          },
+          {
+            "sentence": "Matka nie wyprała ubrania syna. - ___ ubrania nie wyprała matka? - Syna.",
+            "answers": [
+              "czyjego"
+            ],
+            "explain": "Родительный падеж слова syn отвечает на вопрос о принадлежности: czyjego ubrania?"
+          },
+          {
+            "sentence": "Marysia przyszła do szkoły na drugą lekcję. - ___ lekcję Marysia przyszła do szkoły? - Na drugą.",
+            "answers": [
+              "na którą"
+            ],
+            "explain": "Порядковый номер урока в винительном падеже: na którą lekcję?"
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-april-vi",
+        "number": "VI",
+        "topic": "Преобразование предложений",
+        "title": "Преобразование предложений",
+        "passage": "Gosia doskonale zna angielski. (mówi) Gosia doskonale mówi po angielsku. 1. Mojej siostrze smakuje zupa pomidorowa. (lubi) ………………………………………………………………………………………………………………………………………….. 2. Wszyscy pracowici ludzie szanują czas. (osoby) ………………………………………………………………………………………………………………………………………….. 3. W weekend byliśmy w kinie na fascynującym filmie. (poszliśmy) ……………………………………………………………………………….………………………………………………………….. 4. Wiem, jak ma na nazwisko ten pan. (znam) ………………………………………………………………………………………………………………………………………….. 5. Dlaczego nigdy nie ubierasz się w ten ciepły płaszcz? (nosisz) …………………………………………………………………………………………………………………………………………..",
+        "questions": [
+          {
+            "sentence": "Mojej siostrze smakuje zupa pomidorowa. (lubi)",
+            "answers": [
+              "Moja siostra lubi zupę pomidorową"
+            ],
+            "explain": "Smakuje komu: дательный заменяется подлежащим moja siostra.",
+            "manualReview": true
+          },
+          {
+            "sentence": "Wszyscy pracowici ludzie szanują czas. (osoby)",
+            "answers": [
+              "Wszystkie pracowite osoby szanują czas"
+            ],
+            "explain": "Osoby — женский немужской личный род: wszystkie pracowite.",
+            "manualReview": true
+          },
+          {
+            "sentence": "W weekend byliśmy w kinie na fascynującym filmie. (poszliśmy)",
+            "answers": [
+              "W weekend poszliśmy do kina na fascynujący film"
+            ],
+            "explain": "Движение требует винительного: do kina na fascynujący film.",
+            "manualReview": true
+          },
+          {
+            "sentence": "Wiem, jak ma na nazwisko ten pan. (znam)",
+            "answers": [
+              "Znam nazwisko tego pana"
+            ],
+            "explain": "Znać что: nazwisko; принадлежность — tego pana.",
+            "manualReview": true
+          },
+          {
+            "sentence": "Dlaczego nigdy nie ubierasz się w ten ciepły płaszcz? (nosisz)",
+            "answers": [
+              "Dlaczego nigdy nie nosisz tego ciepłego płaszcza"
+            ],
+            "explain": "При отрицании носить что: родительный tego ciepłego płaszcza.",
+            "manualReview": true
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-april-vii",
+        "number": "VII",
+        "topic": "Вид и наклонение",
+        "title": "Вид и наклонение",
+        "passage": "Anna: - Pawle, za miesiąc wychodzę za mąż i wiele dałabym , żeby na swoim ślubie ważyć kilka kilogramów mniej. Próbuję schudnąć i nic mi nie wychodzi. Jesteś dietetykiem i trenerem fitness. Przygotuj mi, proszę, jakąś dobrą dietę. Paweł: - No cóż, nie ma diety cud, dzięki której (mogłaby, mogłabyś, mogłoby)1schudnąć w kilkanaście dni. To nie (byłoby, byłyby, bądź)2też zdrowe dla twojego organizmu. (Odchudziłabyś się, Odchudzałyby się, Odchudzaj się)3rozsądnie! Anna: - A co ty (zrobiłby, zrób, zrobiłbyś)4 na moim miejscu? Paweł: - Gdybym (chciałbym, chciał, chciałem)5 wyglądać lepiej na uroczystości za cztery tygodnie, przede wszystkim starałbym się jeść zdrowo: regularnie pięć posiłków dziennie, w tym dużo owoców i warzyw, które (niech zapewni, zapewniłyby, zapewniłoby)6 mi odpowiednią dawkę witamin. Anna: - A co mogę jeść? Paweł: - Wszystko, ale z umiarem. Jeśli możesz, (wyrzucałaby, wyrzuciłabyś, wyrzuć)7ze swojej diety tłuste mięso. Możesz je zastąpić drobiem i rybami. Po południu (niech wybierze, niech wybiera, wybieraj)8 pełnoziarnisty makaron lub ciemny ryż. Anna: - To wystarczy? Paweł: - Oczywiście nie. Zdrowej diecie musi towarzyszyć aktywność fizyczna. Może to być szybki spacer, jazda na rowerze, pływanie. O, właśnie dziś wieczorem idę z synem na basen. Proponuję, (chodźmy, chodź, chodziliby)9tam razem. Potrenuję także z tobą. Anna: - Dzisiaj nie mogę. O 20.00 idę do krawcowej. (Idźmy, Idźcie, Poszlibyście)10 sami.",
+        "questions": [
+          {
+            "sentence": "Paweł: - No cóż, nie ma diety cud, dzięki której ___ schudnąć w kilkanaście dni.",
+            "options": [
+              "mogłaby",
+              "mogłabyś",
+              "mogłoby"
+            ],
+            "answer": 1,
+            "explain": "Обращение к Anna на ты: mogłabyś."
+          },
+          {
+            "sentence": "To nie ___ też zdrowe dla twojego organizmu.",
+            "options": [
+              "byłoby",
+              "byłyby",
+              "bądź"
+            ],
+            "answer": 0,
+            "explain": "Безличное to: byłoby."
+          },
+          {
+            "sentence": "___ rozsądnie!",
+            "options": [
+              "Odchudziłabyś się",
+              "Odchudzałyby się",
+              "Odchudzaj się"
+            ],
+            "answer": 2,
+            "explain": "Совет о процессе похудения: odchudzaj się."
+          },
+          {
+            "sentence": "Anna: - A co ty ___ na moim miejscu?",
+            "options": [
+              "zrobiłby",
+              "zrób",
+              "zrobiłbyś"
+            ],
+            "answer": 2,
+            "explain": "Вопрос к Pawłowi: zrobiłbyś."
+          },
+          {
+            "sentence": "Paweł: - Gdybym ___ wyglądać lepiej na uroczystości za cztery tygodnie, przede wszystkim starałbym się jeść zdrowo: regularnie pięć posiłków dziennie, w tym dużo owoców i warzyw, które 〔6〕 mi odpowiednią dawkę witamin.",
+            "options": [
+              "chciałbym",
+              "chciał",
+              "chciałem"
+            ],
+            "answer": 1,
+            "explain": "Частица by уже в gdybym: хотел — chciał."
+          },
+          {
+            "sentence": "Paweł: - Gdybym 〔5〕 wyglądać lepiej na uroczystości za cztery tygodnie, przede wszystkim starałbym się jeść zdrowo: regularnie pięć posiłków dziennie, w tym dużo owoców i warzyw, które ___ mi odpowiednią dawkę witamin.",
+            "options": [
+              "niech zapewni",
+              "zapewniłyby",
+              "zapewniłoby"
+            ],
+            "answer": 1,
+            "explain": "Warzywa — множественное число немужского личного рода: zapewniłyby."
+          },
+          {
+            "sentence": "Jeśli możesz, ___ ze swojej diety tłuste mięso.",
+            "options": [
+              "wyrzucałaby",
+              "wyrzuciłabyś",
+              "wyrzuć"
+            ],
+            "answer": 2,
+            "explain": "Разовое побуждение: wyrzuć."
+          },
+          {
+            "sentence": "Po południu ___ pełnoziarnisty makaron lub ciemny ryż.",
+            "options": [
+              "niech wybierze",
+              "niech wybiera",
+              "wybieraj"
+            ],
+            "answer": 2,
+            "explain": "Совет о регулярном выборе пищи: wybieraj."
+          },
+          {
+            "sentence": "Proponuję, ___ tam razem.",
+            "options": [
+              "chodźmy",
+              "chodź",
+              "chodziliby"
+            ],
+            "answer": 0,
+            "explain": "Совместное приглашение: chodźmy."
+          },
+          {
+            "sentence": "___ sami.",
+            "options": [
+              "Idźmy",
+              "Idźcie",
+              "Poszlibyście"
+            ],
+            "answer": 1,
+            "explain": "Anna обращается к двум людям: idźcie."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-april-viii",
+        "number": "VIII",
+        "topic": "Предлоги",
+        "title": "Предлоги",
+        "passage": "przy z dla na w za u Koty bardzo często potrzebują uwagi opiekunów. Kiedy się nudzą, szukają ludzkiego towarzystwa przy każdej okazji. Okazują to na przykład tak, że ciągle chodzą …………………………….. 1 człowiekiem, chcą się bawić i być głaskane. Starajmy się więc, by zwierzę miało …………………………….. 2 domu wszystko, czego potrzebuje – dobre jedzenie, zabawki, spokojne miejsca. Ważne, żeby często się …………………………….. 3 nim bawić i razem spędzać czas. Pamiętajmy też o regularnych wizytach …………………………….. 4 weterynarza. Wszystko to jest bardzo ważne …………………………….. 5 zdrowia i samopoczucia naszego małego przyjaciela.",
+        "questions": [
+          {
+            "sentence": "Okazują to na przykład tak, że ciągle chodzą ___ człowiekiem, chcą się bawić i być głaskane.",
+            "options": [
+              "przy",
+              "z",
+              "dla",
+              "na",
+              "w",
+              "za",
+              "u"
+            ],
+            "answer": 5,
+            "explain": "Ходить за человеком: za człowiekiem."
+          },
+          {
+            "sentence": "Starajmy się więc, by zwierzę miało ___ domu wszystko, czego potrzebuje – dobre jedzenie, zabawki, spokojne miejsca.",
+            "options": [
+              "przy",
+              "z",
+              "dla",
+              "na",
+              "w",
+              "za",
+              "u"
+            ],
+            "answer": 4,
+            "explain": "В доме: w domu."
+          },
+          {
+            "sentence": "Ważne, żeby często się ___ nim bawić i razem spędzać czas.",
+            "options": [
+              "przy",
+              "z",
+              "dla",
+              "na",
+              "w",
+              "za",
+              "u"
+            ],
+            "answer": 1,
+            "explain": "Играть с ним: z nim."
+          },
+          {
+            "sentence": "Pamiętajmy też o regularnych wizytach ___ weterynarza.",
+            "options": [
+              "przy",
+              "z",
+              "dla",
+              "na",
+              "w",
+              "za",
+              "u"
+            ],
+            "answer": 6,
+            "explain": "Посещение специалиста: u weterynarza."
+          },
+          {
+            "sentence": "Wszystko to jest bardzo ważne ___ zdrowia i samopoczucia naszego małego przyjaciela.",
+            "options": [
+              "przy",
+              "z",
+              "dla",
+              "na",
+              "w",
+              "za",
+              "u"
+            ],
+            "answer": 2,
+            "explain": "Для здоровья: dla zdrowia."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "adult-2023-june",
+    "label": "Июнь 2023",
+    "date": "24–25 июня 2023",
+    "source": "https://certyfikatpolski.pl/wp-content/uploads/2025/07/2023_06_24_25_B1_arkusz_egzaminacyjny.pdf",
+    "exercises": [
+      {
+        "id": "adult-2023-june-i",
+        "number": "I",
+        "topic": "Формы слов и падежи",
+        "title": "Формы слов и падежи",
+        "passage": "Co roku, w październiku, obchodzimy Międzynarodowy Dzień Krajobrazu. Jest to okazja, by pomyśleć, w jakich (miejsca, miejscach, miejscu)1 czujemy się dobrze. Niektóre okolice działają na (nas, nam, nami)2 pozytywnie, podczas gdy innych zdecydowanie nie lubimy. Z pewnością wszyscy chcemy, aby w (naszą, nasza, naszej) 3 miejscowości było dużo terenów, gdzie czujemy się komfortowo. Jak mówi Piotr Otrębski, rzecznik Generalnej Dyrekcji Ochrony Środowiska, warto rozmawiać z (ludzie, ludzi, ludźmi)4 o tym, że każdy może zmieniać (miastu, miasto, mieście)5, w którym żyje na co dzień. Wystarczy uwierzyć w (swojego, swojej, swoją)6 kreatywność i nie bać się (pomysłami, pomysłów, pomysły)7. Planowanie nie jest tylko zadaniem dla architektów lub instytucji państwowych. Mieszkańcy powinni tworzyć (nowi, nowy, nowe)8 projekty i na szczęście dostajemy ich coraz więcej. Konsultacje społeczne pozwalają każdemu (mieszkańcu, mieszkańcowi, mieszkańcem)9 wypowiedzieć się na temat jego (najbliższej, najbliższych, najbliższą)10 okolicy. Naprawdę warto zabrać głos w tej sprawie.",
+        "questions": [
+          {
+            "sentence": "Jest to okazja, by pomyśleć, w jakich ___ czujemy się dobrze.",
+            "options": [
+              "miejsca",
+              "miejscach",
+              "miejscu"
+            ],
+            "answer": 1,
+            "explain": "W jakich miejscach — местный множественного числа."
+          },
+          {
+            "sentence": "Niektóre okolice działają na ___ pozytywnie, podczas gdy innych zdecydowanie nie lubimy.",
+            "options": [
+              "nas",
+              "nam",
+              "nami"
+            ],
+            "answer": 0,
+            "explain": "Działać na kogo — на нас: nas."
+          },
+          {
+            "sentence": "Z pewnością wszyscy chcemy, aby w ___ miejscowości było dużo terenów, gdzie czujemy się komfortowo.",
+            "options": [
+              "naszą",
+              "nasza",
+              "naszej"
+            ],
+            "answer": 2,
+            "explain": "W нашей местности: w naszej miejscowości."
+          },
+          {
+            "sentence": "Jak mówi Piotr Otrębski, rzecznik Generalnej Dyrekcji Ochrony Środowiska, warto rozmawiać z ___ o tym, że każdy może zmieniać 〔5〕, w którym żyje na co dzień.",
+            "options": [
+              "ludzie",
+              "ludzi",
+              "ludźmi"
+            ],
+            "answer": 2,
+            "explain": "Rozmawiać z кем — творительный ludźmi."
+          },
+          {
+            "sentence": "Jak mówi Piotr Otrębski, rzecznik Generalnej Dyrekcji Ochrony Środowiska, warto rozmawiać z 〔4〕 o tym, że każdy może zmieniać ___ , w którym żyje na co dzień.",
+            "options": [
+              "miastu",
+              "miasto",
+              "mieście"
+            ],
+            "answer": 1,
+            "explain": "Zmieniać что: miasto, винительный."
+          },
+          {
+            "sentence": "Wystarczy uwierzyć w ___ kreatywność i nie bać się 〔7〕.",
+            "options": [
+              "swojego",
+              "swojej",
+              "swoją"
+            ],
+            "answer": 2,
+            "explain": "Uwierzyć w что: swoją kreatywność, винительный."
+          },
+          {
+            "sentence": "Wystarczy uwierzyć w 〔6〕 kreatywność i nie bać się ___ .",
+            "options": [
+              "pomysłami",
+              "pomysłów",
+              "pomysły"
+            ],
+            "answer": 1,
+            "explain": "Bać się требует родительного: pomysłów."
+          },
+          {
+            "sentence": "Mieszkańcy powinni tworzyć ___ projekty i na szczęście dostajemy ich coraz więcej.",
+            "options": [
+              "nowi",
+              "nowy",
+              "nowe"
+            ],
+            "answer": 2,
+            "explain": "Новые проекты: nowe projekty."
+          },
+          {
+            "sentence": "Konsultacje społeczne pozwalają każdemu ___ wypowiedzieć się na temat jego 〔10〕 okolicy.",
+            "options": [
+              "mieszkańcu",
+              "mieszkańcowi",
+              "mieszkańcem"
+            ],
+            "answer": 1,
+            "explain": "Позволить кому: mieszkańcowi, дательный."
+          },
+          {
+            "sentence": "Konsultacje społeczne pozwalają każdemu 〔9〕 wypowiedzieć się na temat jego ___ okolicy.",
+            "options": [
+              "najbliższej",
+              "najbliższych",
+              "najbliższą"
+            ],
+            "answer": 0,
+            "explain": "Принадлежность: jego najbliższej okolicy, родительный."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-june-ii",
+        "number": "II",
+        "topic": "Союзы",
+        "title": "Союзы",
+        "passage": "lub jeśli ale ponieważ więc a żeby O ochronę środowiska naturalnego powinny dbać nie tylko wielkie firmy przemysłowe, ale także każdy z nas. O czym warto pamiętać? 1) Nie wyrzucajmy jedzenia. Nie kupujmy produktów spożywczych w promocji, ……………………….. 1 ich aktualnie nie potrzebujemy. 2) Do pracy możemy jeździć komunikacją miejską …………………………2rowerem. Rower nie emituje spalin, …………………………. 3 jednocześnie zapewni nam codzienną porcję ruchu. 3) Wyłączajmy światło oraz urządzenia elektryczne (komputer, radio, telewizor), z których w danej chwili nie korzystamy, ………………………………4zaoszczędzić prąd. 4) Zamiast kąpieli w wannie wybierajmy prysznic, ……………………….. 5 wtedy zużywamy zdecydowanie mniej wody.",
+        "questions": [
+          {
+            "sentence": "Nie kupujmy produktów spożywczych w promocji, ___ ich aktualnie nie potrzebujemy.",
+            "options": [
+              "lub",
+              "jeśli",
+              "ale",
+              "ponieważ",
+              "więc",
+              "a",
+              "żeby"
+            ],
+            "answer": 1,
+            "explain": "Jeśli вводит условие: если не нужны."
+          },
+          {
+            "sentence": "2) Do pracy możemy jeździć komunikacją miejską ___ rowerem.",
+            "options": [
+              "lub",
+              "jeśli",
+              "ale",
+              "ponieważ",
+              "więc",
+              "a",
+              "żeby"
+            ],
+            "answer": 0,
+            "explain": "Lub обозначает альтернативу."
+          },
+          {
+            "sentence": "Rower nie emituje spalin, ___ jednocześnie zapewni nam codzienną porcję ruchu.",
+            "options": [
+              "lub",
+              "jeśli",
+              "ale",
+              "ponieważ",
+              "więc",
+              "a",
+              "żeby"
+            ],
+            "answer": 5,
+            "explain": "A сопоставляет два преимущества велосипеда."
+          },
+          {
+            "sentence": "3) Wyłączajmy światło oraz urządzenia elektryczne (komputer, radio, telewizor), z których w danej chwili nie korzystamy, ___ zaoszczędzić prąd.",
+            "options": [
+              "lub",
+              "jeśli",
+              "ale",
+              "ponieważ",
+              "więc",
+              "a",
+              "żeby"
+            ],
+            "answer": 6,
+            "explain": "Żeby вводит цель: чтобы сэкономить электричество."
+          },
+          {
+            "sentence": "4) Zamiast kąpieli w wannie wybierajmy prysznic, ___ wtedy zużywamy zdecydowanie mniej wody.",
+            "options": [
+              "lub",
+              "jeśli",
+              "ale",
+              "ponieważ",
+              "więc",
+              "a",
+              "żeby"
+            ],
+            "answer": 3,
+            "explain": "Ponieważ вводит причину."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-june-iii",
+        "number": "III",
+        "topic": "Степени сравнения",
+        "title": "Степени сравнения",
+        "passage": "Dlaczego warto mieć czytnik e-booków? Czy jest on lepszy niż tablet? Czy wersje elektroniczne książek czyta się szybciej niż papierowe? Na pytanie odpowiadają autorzy blogu Czytio.pl. Oto zalety posiadania e-booka, o których mówią. Dla osób, które lubią spędzać czas z książką w podróży istotne jest to, że bateria e-booka funkcjonuje (dłużej, dłuższa, najdłużej)1 od baterii tabletu. Czytanie jest też bardziej naturalne, ponieważ ekran e-ink okazuje się (najbliższy, bliższy, bliski)2tradycyjnej książce niż ekran cyfrowy. Ponadto z każdym rokiem e-book oferuje coraz (większą, najwięcej, więcej)3 opcji czytania. Jeśli czytasz na słońcu, to e-book powinien być twoim wyborem – jakość jego ekranu jest (najwyższa, wyżej, najwyżej)4 w jasnym świetle. Dodatkowo czytniki e-booków zazwyczaj ważą (mniejsze, mniej, najmniejsze)5 od tabletów i mają niewielkie rozmiary, a więc są wygodne w użyciu.",
+        "questions": [
+          {
+            "sentence": "Dla osób, które lubią spędzać czas z książką w podróży istotne jest to, że bateria e-booka funkcjonuje ___ od baterii tabletu.",
+            "options": [
+              "dłużej",
+              "dłuższa",
+              "najdłużej"
+            ],
+            "answer": 0,
+            "explain": "При funkcjonuje нужно наречие сравнительной степени: dłużej."
+          },
+          {
+            "sentence": "Czytanie jest też bardziej naturalne, ponieważ ekran e-ink okazuje się ___ tradycyjnej książce niż ekran cyfrowy.",
+            "options": [
+              "najbliższy",
+              "bliższy",
+              "bliski"
+            ],
+            "answer": 1,
+            "explain": "Сравнение с niż: bliższy."
+          },
+          {
+            "sentence": "Ponadto z każdym rokiem e-book oferuje coraz ___ opcji czytania.",
+            "options": [
+              "większą",
+              "najwięcej",
+              "więcej"
+            ],
+            "answer": 2,
+            "explain": "Coraz więcej opcji — всё больше возможностей."
+          },
+          {
+            "sentence": "Jeśli czytasz na słońcu, to e-book powinien być twoim wyborem – jakość jego ekranu jest ___ w jasnym świetle.",
+            "options": [
+              "najwyższa",
+              "wyżej",
+              "najwyżej"
+            ],
+            "answer": 0,
+            "explain": "Jakość — женский род; превосходная степень najwyższa."
+          },
+          {
+            "sentence": "Dodatkowo czytniki e-booków zazwyczaj ważą ___ od tabletów i mają niewielkie rozmiary, a więc są wygodne w użyciu.",
+            "options": [
+              "mniejsze",
+              "mniej",
+              "najmniejsze"
+            ],
+            "answer": 1,
+            "explain": "Ważyć сколько: наречие меньше — mniej."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-june-iv",
+        "number": "IV",
+        "topic": "Времена глаголов",
+        "title": "Времена глаголов",
+        "passage": "Dwa lata temu nasza rodzina przeprowadziła się z dużego miasta na wieś. Dziś uważamy – mówią Agnieszka i jej mąż – że ……………………………….………. 1 (my – podjąć)1 najlepszą decyzję w naszym życiu. Dawniej, gdy ……………………………….………. 2 (ja – mieszkać)2 w mieście – wspomina kobieta – to bardzo ……………………………….………. 3 (przeszkadzać)3 mi hałas uliczny. Dzieci ……………………………….………. 4 (musieć)4czekać na nas w przedszkolu do późna, bo mąż i ja często ……………………………….………. 5 (stać)5 w ogromnych korkach w drodze z pracy. Teraz oboje ……………………………….………. 6 (cieszyć się)6ciszą, spokojem oraz czasem dla siebie i bliskich. Obecnie mąż ……………………………….………. 7 (prowadzić)7 gospodarstwo, a ja ……………………………….………. 8 (pracować)8 na pół etatu w domu kultury. Dzieci do przedszkola ……………………………….………. 9 (iść)9tylko 5 minut spacerem. Jesteśmy bardzo szczęśliwi, że ……………………………….………. 10 (żyć)10 w zgodzie z naturą. Za nic na świecie nie wrócilibyśmy do miasta!",
+        "questions": [
+          {
+            "sentence": "Dziś uważamy – mówią Agnieszka i jej mąż – że ___ najlepszą decyzję w naszym życiu. (my – podjąć)",
+            "answers": [
+              "podjęliśmy"
+            ],
+            "explain": "Супруги вместе: my podjęliśmy."
+          },
+          {
+            "sentence": "Dawniej, gdy ___ w mieście – wspomina kobieta – to bardzo 〔3〕 (przeszkadzać) mi hałas uliczny. (ja – mieszkać)",
+            "answers": [
+              "mieszkałam"
+            ],
+            "explain": "Говорит женщина: mieszkałam."
+          },
+          {
+            "sentence": "Dawniej, gdy 〔2〕 (ja – mieszkać) w mieście – wspomina kobieta – to bardzo ___ mi hałas uliczny. (przeszkadzać)",
+            "answers": [
+              "przeszkadzał"
+            ],
+            "explain": "Hałas — мужской род: przeszkadzał."
+          },
+          {
+            "sentence": "Dzieci ___ czekać na nas w przedszkolu do późna, bo mąż i ja często 〔5〕 (stać) w ogromnych korkach w drodze z pracy. (musieć)",
+            "answers": [
+              "musiały"
+            ],
+            "explain": "Dzieci требуют немужской личной формы: musiały."
+          },
+          {
+            "sentence": "Dzieci 〔4〕 (musieć)czekać na nas w przedszkolu do późna, bo mąż i ja często ___ w ogromnych korkach w drodze z pracy. (stać)",
+            "answers": [
+              "staliśmy"
+            ],
+            "explain": "Муж и жена: staliśmy."
+          },
+          {
+            "sentence": "Teraz oboje ___ ciszą, spokojem oraz czasem dla siebie i bliskich. (cieszyć się)",
+            "answers": [
+              "cieszymy się",
+              "się cieszymy"
+            ],
+            "explain": "Настоящее время для my: cieszymy się."
+          },
+          {
+            "sentence": "Obecnie mąż ___ gospodarstwo, a ja 〔8〕 (pracować) na pół etatu w domu kultury. (prowadzić)",
+            "answers": [
+              "prowadzi"
+            ],
+            "explain": "Он ведёт хозяйство: prowadzi."
+          },
+          {
+            "sentence": "Obecnie mąż 〔7〕 (prowadzić) gospodarstwo, a ja ___ na pół etatu w domu kultury. (pracować)",
+            "answers": [
+              "pracuję"
+            ],
+            "explain": "Ja в настоящем времени: pracuję."
+          },
+          {
+            "sentence": "Dzieci do przedszkola ___ tylko 5 minut spacerem. (iść)",
+            "answers": [
+              "idą"
+            ],
+            "explain": "Dzieci — они: idą."
+          },
+          {
+            "sentence": "Jesteśmy bardzo szczęśliwi, że ___ w zgodzie z naturą. (żyć)",
+            "answers": [
+              "żyjemy"
+            ],
+            "explain": "My: żyjemy."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-june-v",
+        "number": "V",
+        "topic": "Вопросительные слова",
+        "title": "Вопросительные слова",
+        "passage": "Basia czekała na męża na przystanku autobusowym. - Gdzie Basia czekała na męża? - Na przystanku autobusowym. 1. Adam poszedł na niedzielny spacer z całą swoją rodziną. - ………………………………………………………………… Adam poszedł na niedzielny spacer? - Z całą swoją rodziną. 2. W tym roku państwo Sikorscy obchodzą dziesiątą rocznicę ślubu. - …………………………………………………….. rocznicę ślubu obchodzą w tym roku państwo Sikorscy? - Dziesiątą. 3. Igor mieszka w Warszawie już prawie dwa lata. - ……………………………………………………………….. Igor mieszka w Warszawie? - Już prawie dwa lata. 4. Przed domem stoi samochód mojego brata. - ……………………………………………………………… samochód stoi przed domem? - Mojego brata. 5. Michał podarował kwiaty swojej nauczycielce matematyki. - ………………………………………………………… Michał podarował kwiaty? - Swojej nauczycielce matematyki.",
+        "questions": [
+          {
+            "sentence": "Adam poszedł na niedzielny spacer z całą swoją rodziną. - ___ Adam poszedł na niedzielny spacer? - Z całą swoją rodziną.",
+            "answers": [
+              "z kim"
+            ],
+            "explain": "Совместность: z kim?"
+          },
+          {
+            "sentence": "W tym roku państwo Sikorscy obchodzą dziesiątą rocznicę ślubu. - ___ rocznicę ślubu obchodzą w tym roku państwo Sikorscy? - Dziesiątą.",
+            "answers": [
+              "którą"
+            ],
+            "explain": "Порядковая годовщина: którą rocznicę?"
+          },
+          {
+            "sentence": "Igor mieszka w Warszawie już prawie dwa lata. - ___ Igor mieszka w Warszawie? - Już prawie dwa lata.",
+            "answers": [
+              "jak długo",
+              "od jak dawna"
+            ],
+            "explain": "Вопрос о длительности: jak długo?"
+          },
+          {
+            "sentence": "Przed domem stoi samochód mojego brata. - ___ samochód stoi przed domem? - Mojego brata.",
+            "answers": [
+              "czyj"
+            ],
+            "explain": "Принадлежность автомобиля: czyj?"
+          },
+          {
+            "sentence": "Michał podarował kwiaty swojej nauczycielce matematyki. - ___ Michał podarował kwiaty? - Swojej nauczycielce matematyki.",
+            "answers": [
+              "komu"
+            ],
+            "explain": "Адресат подарка: komu?"
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-june-vi",
+        "number": "VI",
+        "topic": "Преобразование предложений",
+        "title": "Преобразование предложений",
+        "passage": "Już od miesiąca planujemy nasz letni urlop. (myślimy) Już od miesiąca myślimy o naszym letnim urlopie. 1. Mąż Anny jest technikiem dentystycznym. (pracuje jako) ……………………………………………………..……………………………………….. 2. Brak mi długich rozmów z przyjaciółką. (Tęsknię za) ……………………………………………………..……………………………………….. 3. Jerzy często wspomina swoją pierwszą wycieczkę rowerową. (opowiada o) ……………………………………………………..……………………………………….. 4. Jestem trochę wyższa niż moja siostra. (od) ……………………………………………………..……………………………………….. 5. W grupie astronautów są kobiety i mężczyźni. (składa się z) ……………………………………………………..………………………………………..",
+        "questions": [
+          {
+            "sentence": "Mąż Anny jest technikiem dentystycznym. (pracuje jako)",
+            "answers": [
+              "Mąż Anny pracuje jako technik dentystyczny"
+            ],
+            "explain": "После jako название профессии в именительном падеже.",
+            "manualReview": true
+          },
+          {
+            "sentence": "Brak mi długich rozmów z przyjaciółką. (Tęsknię za)",
+            "answers": [
+              "Tęsknię za długimi rozmowami z przyjaciółką"
+            ],
+            "explain": "Tęsknić za требует творительного: rozmowami.",
+            "manualReview": true
+          },
+          {
+            "sentence": "Jerzy często wspomina swoją pierwszą wycieczkę rowerową. (opowiada o)",
+            "answers": [
+              "Jerzy często opowiada o swojej pierwszej wycieczce rowerowej"
+            ],
+            "explain": "Opowiadać o требует местного: wycieczce.",
+            "manualReview": true
+          },
+          {
+            "sentence": "Jestem trochę wyższa niż moja siostra. (od)",
+            "answers": [
+              "Jestem trochę wyższa od mojej siostry"
+            ],
+            "explain": "После od родительный: mojej siostry.",
+            "manualReview": true
+          },
+          {
+            "sentence": "W grupie astronautów są kobiety i mężczyźni. (składa się z)",
+            "answers": [
+              "Grupa astronautów składa się z kobiet i mężczyzn"
+            ],
+            "explain": "Składać się z требует родительного: kobiet i mężczyzn.",
+            "manualReview": true
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-june-vii",
+        "number": "VII",
+        "topic": "Вид и наклонение",
+        "title": "Вид и наклонение",
+        "passage": "Adam: Hej! Przygotowaliście się do testu z gramatyki? Paweł: Niestety nie… Gdyby Hiszpanie nie grali wczoraj z Polską meczu, byłaby szansa na naukę… Ale tak... Ania: Poprośmy profesora o zmianę terminu! Co o tym myślicie? Basia: Dobry pomysł! Janku, (porozmawiałby, porozmawiaj, niech rozmawia)1z profesorem – on bardzo cię lubi. Janek: Znowu ja? Dobrze, ale (nie narzekaliby, niech nie narzeka, nie narzekajcie)2 potem, jeśli się nie uda! Basia: Zgoda, nie będziemy narzekać! A teraz (chodźmy, niech chodzą, chodzilibyście)3, bo zaczyna się lekcja! Profesor: Drodzy uczniowie! Czy (mogliby, moglibyście, mogłybyście)4 nie rozmawiać? (Chciałbym, Chciałby, Chciej) 5 już zacząć lekcję. Janek: Przepraszamy bardzo! Panie profesorze, czy możemy nie pisać dzisiaj testu z gramatyki? Profesor: Dlaczego (wolałby, wolałybyście, wolałbyś)6 go dzisiaj nie pisać, Janku? Janek: Niestety wczoraj zupełnie o nim zapomniałem, moi koledzy chyba też. Czy (zgodziłby się, zgadzałby się, niech się zgodzi)7 pan przełożyć go na przyszły tydzień? (Byliby, Byłyby, Bylibyśmy)8 panu bardzo wdzięczni! Profesor: Dobrze, osoby nieprzygotowane (napisałby, pisaliby, niech napiszą)9test za tydzień. Za chwilę odpytam tych, którzy jednak się na dziś nauczyli. A teraz niech Paweł (przypomniałby, przypomina, przypomni)10 nam, o czym ostatnio mówiliśmy na lekcji...",
+        "questions": [
+          {
+            "sentence": "Janku, ___ z profesorem – on bardzo cię lubi.",
+            "options": [
+              "porozmawiałby",
+              "porozmawiaj",
+              "niech rozmawia"
+            ],
+            "answer": 1,
+            "explain": "Просьба к Jankowi: porozmawiaj."
+          },
+          {
+            "sentence": "Dobrze, ale ___ potem, jeśli się nie uda!",
+            "options": [
+              "nie narzekaliby",
+              "niech nie narzeka",
+              "nie narzekajcie"
+            ],
+            "answer": 2,
+            "explain": "Не жалуйтесь: отрицательное повелительное nie narzekajcie."
+          },
+          {
+            "sentence": "A teraz ___ , bo zaczyna się lekcja!",
+            "options": [
+              "chodźmy",
+              "niech chodzą",
+              "chodzilibyście"
+            ],
+            "answer": 0,
+            "explain": "Совместный призыв: chodźmy."
+          },
+          {
+            "sentence": "Czy ___ nie rozmawiać?",
+            "options": [
+              "mogliby",
+              "moglibyście",
+              "mogłybyście"
+            ],
+            "answer": 1,
+            "explain": "Ученики — мужская личная группа: moglibyście."
+          },
+          {
+            "sentence": "___ już zacząć lekcję.",
+            "options": [
+              "Chciałbym",
+              "Chciałby",
+              "Chciej"
+            ],
+            "answer": 0,
+            "explain": "Профессор говорит о себе: chciałbym."
+          },
+          {
+            "sentence": "Profesor: Dlaczego ___ go dzisiaj nie pisać, Janku?",
+            "options": [
+              "wolałby",
+              "wolałybyście",
+              "wolałbyś"
+            ],
+            "answer": 2,
+            "explain": "Janek — ты, мужской род: wolałbyś."
+          },
+          {
+            "sentence": "Czy ___ pan przełożyć go na przyszły tydzień?",
+            "options": [
+              "zgodziłby się",
+              "zgadzałby się",
+              "niech się zgodzi"
+            ],
+            "answer": 0,
+            "explain": "Вежливая разовая просьба согласиться: zgodziłby się."
+          },
+          {
+            "sentence": "___ panu bardzo wdzięczni!",
+            "options": [
+              "Byliby",
+              "Byłyby",
+              "Bylibyśmy"
+            ],
+            "answer": 2,
+            "explain": "Мы были бы благодарны: bylibyśmy."
+          },
+          {
+            "sentence": "Profesor: Dobrze, osoby nieprzygotowane ___ test za tydzień.",
+            "options": [
+              "napisałby",
+              "pisaliby",
+              "niech napiszą"
+            ],
+            "answer": 2,
+            "explain": "Пусть напишут: niech napiszą."
+          },
+          {
+            "sentence": "A teraz niech Paweł ___ nam, o czym ostatnio mówiliśmy na lekcji...",
+            "options": [
+              "przypomniałby",
+              "przypomina",
+              "przypomni"
+            ],
+            "answer": 2,
+            "explain": "Пусть напомнит разово: niech przypomni."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-june-viii",
+        "number": "VIII",
+        "topic": "Предлоги",
+        "title": "Предлоги",
+        "passage": "dla z za przez u o na Planowałam, że za tydzień będę …………………..……1rodziny w Neapolu. Niestety okazało się, że nie mogę wziąć urlopu i muszę zostać w Polsce. Słucham więc włoskiej muzyki i spędzam czas …………………..…… 2 książką. Poprosiłam też koleżanki …………………..……3 polecenie mi miejsc, w których można poczuć się trochę jak na wakacjach we Włoszech. Marta powiedziała, że kiedy ma ochotę …………………..……4 włoski klimat, idzie do restauracji Ti Amo. Dlaczego akurat tam? Bo oprócz pysznej pizzy właściciele oferują gościom to, co typowe …………………..…… 5 Włoch – miłą atmosferę i piękną muzykę.",
+        "questions": [
+          {
+            "sentence": "Planowałam, że za tydzień będę ___ rodziny w Neapolu.",
+            "options": [
+              "dla",
+              "z",
+              "za",
+              "przez",
+              "u",
+              "o",
+              "na"
+            ],
+            "answer": 4,
+            "explain": "Быть у семьи: u rodziny."
+          },
+          {
+            "sentence": "Słucham więc włoskiej muzyki i spędzam czas ___ książką.",
+            "options": [
+              "dla",
+              "z",
+              "za",
+              "przez",
+              "u",
+              "o",
+              "na"
+            ],
+            "answer": 1,
+            "explain": "Проводить время с книгой: z książką."
+          },
+          {
+            "sentence": "Poprosiłam też koleżanki ___ polecenie mi miejsc, w których można poczuć się trochę jak na wakacjach we Włoszech.",
+            "options": [
+              "dla",
+              "z",
+              "za",
+              "przez",
+              "u",
+              "o",
+              "na"
+            ],
+            "answer": 5,
+            "explain": "Poprosić o требует винительного."
+          },
+          {
+            "sentence": "Marta powiedziała, że kiedy ma ochotę ___ włoski klimat, idzie do restauracji Ti Amo.",
+            "options": [
+              "dla",
+              "z",
+              "za",
+              "przez",
+              "u",
+              "o",
+              "na"
+            ],
+            "answer": 6,
+            "explain": "Mieć ochotę na — иметь желание на что-то."
+          },
+          {
+            "sentence": "Bo oprócz pysznej pizzy właściciele oferują gościom to, co typowe ___ Włoch – miłą atmosferę i piękną muzykę.",
+            "options": [
+              "dla",
+              "z",
+              "za",
+              "przez",
+              "u",
+              "o",
+              "na"
+            ],
+            "answer": 0,
+            "explain": "Typowe dla Włoch: для Италии."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "adult-2023-nov",
+    "label": "Ноябрь 2023",
+    "date": "18–19 ноября 2023",
+    "source": "https://certyfikatpolski.pl/wp-content/uploads/2025/07/2023_11_18_19_B1_arkusz_egzaminacyjny.pdf",
+    "exercises": [
+      {
+        "id": "adult-2023-nov-i",
+        "number": "I",
+        "topic": "Формы слов и падежи",
+        "title": "Формы слов и падежи",
+        "passage": "Miejsce rodzinnej edukacji w Muzeum Historii Żydów Polskich POLIN nazywa się „U króla Maciusia”. Jest to nowoczesna przestrzeń zaprojektowana dla dzieci. „Chcemy, żeby każdy mógł rozwijać tu swoje talenty” – mówi Karolina Śmigiel, koordynatorka projektu. Tolerancja i odpowiedzialność to w (tym, tego, temu)1 miejscu najważniejsze wartości, więc (rodzinie, rodziną, rodziny)2 będą się tu czuć komfortowo. Janusz Korczak, znany pedagog, uważał, że dzieci to „mali dorośli”. (Go, Niego, Jego)3słowa – „Ważne, co myślisz i czujesz” – są główną (zasadą, zasadę, zasady)4„U króla Maciusia”. Zajęcia prowadzą utalentowani i doświadczeni nauczyciele oraz (artyści, artysty, artyście)5. Kochają oni pracę z dziećmi i chętnie spędzają z (nich, nim, nimi)6czas. Za pomocą specjalnych (materiały, materiałów, materiałach)7 maluchy odkrywają świat (żydowskiej, żydowskiego, żydowską)8 kultury, tradycji i historii. Dzieci razem z opiekunami zapraszamy do (zabawy, zabawą, zabawie)9„U króla Maciusia” w weekendy. Wejście jest całkowicie (bezpłatne, bezpłatnym, bezpłatny)10.",
+        "questions": [
+          {
+            "sentence": "Tolerancja i odpowiedzialność to w ___ miejscu najważniejsze wartości, więc 〔2〕 będą się tu czuć komfortowo.",
+            "options": [
+              "tym",
+              "tego",
+              "temu"
+            ],
+            "answer": 0,
+            "explain": "W tym miejscu — местный падеж."
+          },
+          {
+            "sentence": "Tolerancja i odpowiedzialność to w 〔1〕 miejscu najważniejsze wartości, więc ___ będą się tu czuć komfortowo.",
+            "options": [
+              "rodzinie",
+              "rodziną",
+              "rodziny"
+            ],
+            "answer": 2,
+            "explain": "Подлежащее во множественном числе: rodziny."
+          },
+          {
+            "sentence": "___ słowa – „Ważne, co myślisz i czujesz” – są główną 〔4〕„U króla Maciusia”.",
+            "options": [
+              "Go",
+              "Niego",
+              "Jego"
+            ],
+            "answer": 2,
+            "explain": "Притяжательное «его»: jego."
+          },
+          {
+            "sentence": "〔3〕słowa – „Ważne, co myślisz i czujesz” – są główną ___ „U króla Maciusia”.",
+            "options": [
+              "zasadą",
+              "zasadę",
+              "zasady"
+            ],
+            "answer": 0,
+            "explain": "После są существительное в творительном: zasadą."
+          },
+          {
+            "sentence": "Zajęcia prowadzą utalentowani i doświadczeni nauczyciele oraz ___ .",
+            "options": [
+              "artyści",
+              "artysty",
+              "artyście"
+            ],
+            "answer": 0,
+            "explain": "Подлежащее мужского личного рода: artyści."
+          },
+          {
+            "sentence": "Kochają oni pracę z dziećmi i chętnie spędzają z ___ czas.",
+            "options": [
+              "nich",
+              "nim",
+              "nimi"
+            ],
+            "answer": 2,
+            "explain": "С детьми: z nimi, творительный."
+          },
+          {
+            "sentence": "Za pomocą specjalnych ___ maluchy odkrywają świat 〔8〕 kultury, tradycji i historii.",
+            "options": [
+              "materiały",
+              "materiałów",
+              "materiałach"
+            ],
+            "answer": 1,
+            "explain": "После za pomocą родительный: materiałów."
+          },
+          {
+            "sentence": "Za pomocą specjalnych 〔7〕 maluchy odkrywają świat ___ kultury, tradycji i historii.",
+            "options": [
+              "żydowskiej",
+              "żydowskiego",
+              "żydowską"
+            ],
+            "answer": 0,
+            "explain": "Родительный женского рода: żydowskiej kultury."
+          },
+          {
+            "sentence": "Dzieci razem z opiekunami zapraszamy do ___ „U króla Maciusia” w weekendy.",
+            "options": [
+              "zabawy",
+              "zabawą",
+              "zabawie"
+            ],
+            "answer": 0,
+            "explain": "Zapraszamy do требует родительного: zabawy."
+          },
+          {
+            "sentence": "Wejście jest całkowicie ___ .",
+            "options": [
+              "bezpłatne",
+              "bezpłatnym",
+              "bezpłatny"
+            ],
+            "answer": 0,
+            "explain": "Wejście — средний род: bezpłatne."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-nov-ii",
+        "number": "II",
+        "topic": "Союзы",
+        "title": "Союзы",
+        "passage": "więc żeby bo dlaczego ale że które Jak zaplanować przyszłość, żeby osiągnąć sukces? Nie umiem zaplanować przyszłości, ………………1 nikt nas w szkole nie uczył organizowania swojego czasu. Ciągle biegam, coś załatwiam, zajmuję się mnóstwem spraw, …………………2 nie zawsze są tego warte. Wiem, ………………………3 praca jest ważna, ……………………4chciałabym realizować także moje marzenia i osiągnąć wreszcie sukces. Postanowiłam więc stworzyć plan działania na najbliższy rok. Uwielbiam gotować, ………………………. 5zapiszę się na kurs kulinarny i w ten sposób zrobię w końcu coś dla siebie.",
+        "questions": [
+          {
+            "sentence": "Nie umiem zaplanować przyszłości, ___ nikt nas w szkole nie uczył organizowania swojego czasu.",
+            "options": [
+              "więc",
+              "żeby",
+              "bo",
+              "dlaczego",
+              "ale",
+              "że",
+              "które"
+            ],
+            "answer": 2,
+            "explain": "Bo объясняет причину."
+          },
+          {
+            "sentence": "Ciągle biegam, coś załatwiam, zajmuję się mnóstwem spraw, ___ nie zawsze są tego warte.",
+            "options": [
+              "więc",
+              "żeby",
+              "bo",
+              "dlaczego",
+              "ale",
+              "że",
+              "które"
+            ],
+            "answer": 6,
+            "explain": "Które относится к spraw во множественном числе."
+          },
+          {
+            "sentence": "Wiem, ___ praca jest ważna, 〔4〕chciałabym realizować także moje marzenia i osiągnąć wreszcie sukces.",
+            "options": [
+              "więc",
+              "żeby",
+              "bo",
+              "dlaczego",
+              "ale",
+              "że",
+              "które"
+            ],
+            "answer": 5,
+            "explain": "После wiem содержание вводится że."
+          },
+          {
+            "sentence": "Wiem, 〔3〕 praca jest ważna, ___ chciałabym realizować także moje marzenia i osiągnąć wreszcie sukces.",
+            "options": [
+              "więc",
+              "żeby",
+              "bo",
+              "dlaczego",
+              "ale",
+              "że",
+              "które"
+            ],
+            "answer": 4,
+            "explain": "Ale противопоставляет работу и личные желания."
+          },
+          {
+            "sentence": "Uwielbiam gotować, ___ zapiszę się na kurs kulinarny i w ten sposób zrobię w końcu coś dla siebie.",
+            "options": [
+              "więc",
+              "żeby",
+              "bo",
+              "dlaczego",
+              "ale",
+              "że",
+              "które"
+            ],
+            "answer": 0,
+            "explain": "Więc вводит следствие."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-nov-iii",
+        "number": "III",
+        "topic": "Степени сравнения",
+        "title": "Степени сравнения",
+        "passage": "Dlaczego lepiej jest wybrać się w podróż samochodem niż samolotem? Po pierwsze taka wyprawa często jest o wiele bardziej relaksująca od przelotu. Gdy jedziesz samochodem, masz (dużo, najwięcej, więcej)1 wolności niż podczas lotu. Możesz zatrzymać się po drodze w dowolnym miejscu. Przejazd samochodem może się też okazać (tańszy, tańsze, taniej)2 – szczególnie, jeśli podróżujemy w grupie. Ponadto coraz (modniejsze, modne, modniej)3staje się obecnie nocowanie w aucie. (Najwygodniej, Najwygodniejszym, Najwygodniejszy)4samochodem osobowym jest w tym wypadku camper. Kiedy decydujesz się na kilkudniową wyprawę, warto jak (dokładniej, dokładnie, najdokładniej)5zaplanować trasę, miejsca postoju, a także budżet. Dzięki temu unikniemy niespodzianek i niepotrzebnych wydatków.",
+        "questions": [
+          {
+            "sentence": "Gdy jedziesz samochodem, masz ___ wolności niż podczas lotu.",
+            "options": [
+              "dużo",
+              "najwięcej",
+              "więcej"
+            ],
+            "answer": 2,
+            "explain": "Больше свободы, чем: więcej wolności niż."
+          },
+          {
+            "sentence": "Przejazd samochodem może się też okazać ___ – szczególnie, jeśli podróżujemy w grupie.",
+            "options": [
+              "tańszy",
+              "tańsze",
+              "taniej"
+            ],
+            "answer": 0,
+            "explain": "Przejazd — мужской род: tańszy."
+          },
+          {
+            "sentence": "Ponadto coraz ___ staje się obecnie nocowanie w aucie.",
+            "options": [
+              "modniejsze",
+              "modne",
+              "modniej"
+            ],
+            "answer": 0,
+            "explain": "Nocowanie — средний род: modniejsze."
+          },
+          {
+            "sentence": "___ samochodem osobowym jest w tym wypadku camper.",
+            "options": [
+              "Najwygodniej",
+              "Najwygodniejszym",
+              "Najwygodniejszy"
+            ],
+            "answer": 1,
+            "explain": "Camper является самым удобным автомобилем: najwygodniejszym samochodem, творительный."
+          },
+          {
+            "sentence": "Kiedy decydujesz się na kilkudniową wyprawę, warto jak ___ zaplanować trasę, miejsca postoju, a także budżet.",
+            "options": [
+              "dokładniej",
+              "dokładnie",
+              "najdokładniej"
+            ],
+            "answer": 2,
+            "explain": "Оборот jak najdokładniej — как можно точнее."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-nov-iv",
+        "number": "IV",
+        "topic": "Времена глаголов",
+        "title": "Времена глаголов",
+        "passage": "Zmiana klimatu jest faktem. Zgadzają się z tym wszystkie najważniejsze organizacje naukowe na świecie. Jak będzie wyglądała Ziemia, co zmieni się za 20, 30 i 50 lat? Jaki świat ………………..............1 (my - zostawić)1za jakiś czas naszym dzieciom? Już dziś tempo zmian .................................................2(decydować)2 o naszym życiu. Trudno powiedzieć, jaki będzie świat w XXII wieku, ponieważ każda zmiana to destabilizacja klimatu i pogody. Prawdopodobnie w przyszłości coraz częściej ......................................................3 (zdarzać się)3: huragany, burze, śnieżyce. Nie wiemy, jak różne państwa wtedy ............................................. 4 (zareagować)4. Czy politycy wreszcie .................................................. 5 (zrozumieć)5, że konieczne są szybkie działania proekologiczne? A może już wkrótce .........................................6(my – musieć)6 bardzo oszczędzać elektryczność i żyć bez samochodów na benzynę. Zdaniem naukowców za 20 lat temperatura bardzo wzrośnie, a już teraz fale upałów i susze ...................................................... 7 (niszczyć)7rolnictwo. Poziom wody w rzekach obecnie cały czas ......................................................8(spadać)8, w wielu miejscach na świecie ...................................................... 9 (brakować)9 wody do picia i nawadniania terenu. Niestety wciąż za mało ......................................................10 (my – myśleć)10 o tym, jak dbać o środowisko.",
+        "questions": [
+          {
+            "sentence": "Jaki świat ___ za jakiś czas naszym dzieciom? (my - zostawić)",
+            "answers": [
+              "zostawimy"
+            ],
+            "explain": "Совершенный вид, будущее my: zostawimy."
+          },
+          {
+            "sentence": "Już dziś tempo zmian ___ o naszym życiu. (decydować)",
+            "answers": [
+              "decyduje"
+            ],
+            "explain": "Tempo — единственное число: decyduje."
+          },
+          {
+            "sentence": "Prawdopodobnie w przyszłości coraz częściej ___ : huragany, burze, śnieżyce. (zdarzać się)",
+            "answers": [
+              "będą zdarzały się",
+              "będą się zdarzały",
+              "będą zdarzać się",
+              "będą się zdarzać"
+            ],
+            "explain": "Будущее множественного числа для huragany, burze, śnieżyce: będą się zdarzały / będą się zdarzać."
+          },
+          {
+            "sentence": "Nie wiemy, jak różne państwa wtedy ___ . (zareagować)",
+            "answers": [
+              "zareagują"
+            ],
+            "explain": "Разные государства: zareagują, будущее совершенного вида."
+          },
+          {
+            "sentence": "Czy politycy wreszcie ___ , że konieczne są szybkie działania proekologiczne? (zrozumieć)",
+            "answers": [
+              "zrozumieją"
+            ],
+            "explain": "Politycy — они: zrozumieją."
+          },
+          {
+            "sentence": "A może już wkrótce ___ bardzo oszczędzać elektryczność i żyć bez samochodów na benzynę. (my – musieć)",
+            "answers": [
+              "będziemy musieli",
+              "będziemy musiały",
+              "będziemy musieć"
+            ],
+            "explain": "Будущее my для musieć: będziemy musieli / musiały / musieć."
+          },
+          {
+            "sentence": "Zdaniem naukowców za 20 lat temperatura bardzo wzrośnie, a już teraz fale upałów i susze ___ rolnictwo. (niszczyć)",
+            "answers": [
+              "niszczą"
+            ],
+            "explain": "Fale и susze — множественное число: niszczą."
+          },
+          {
+            "sentence": "Poziom wody w rzekach obecnie cały czas ___ , w wielu miejscach na świecie 〔9〕 (brakować) wody do picia i nawadniania terenu. (spadać)",
+            "answers": [
+              "spada"
+            ],
+            "explain": "Poziom — единственное число: spada."
+          },
+          {
+            "sentence": "Poziom wody w rzekach obecnie cały czas 〔8〕 (spadać), w wielu miejscach na świecie ___ wody do picia i nawadniania terenu. (brakować)",
+            "answers": [
+              "brakuje"
+            ],
+            "explain": "Безличная конструкция: brakuje wody."
+          },
+          {
+            "sentence": "Niestety wciąż za mało ___ o tym, jak dbać o środowisko. (my – myśleć)",
+            "answers": [
+              "myślimy"
+            ],
+            "explain": "My: myślimy."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-nov-v",
+        "number": "V",
+        "topic": "Вопросительные слова",
+        "title": "Вопросительные слова",
+        "passage": "Jerzy pracuje w szpitalu wojewódzkim. – Gdzie pracuje Jerzy? – W szpitalu wojewódzkim. 1. Magda najbardziej lubi mleczną czekoladę. – …………………………………………… czekoladę Magda lubi najbardziej? – Mleczną. 2. Byłam wczoraj w kinie z siostrą Adama. – …………………………………….……… byłaś wczoraj w kinie? – Z siostrą Adama. 3. Anna spotkała na spacerze swoją nauczycielkę. – …………………………………….……… Anna spotkała na spacerze? – Swoją nauczycielkę. 4. Chłopcy marzą o nocnej wyprawie do lasu. – …………………………………….……… marzą chłopcy? – O nocnej wyprawie do lasu. 5. Za dwa tygodnie zaczynają się egzaminy maturalne. – …………………………………….……… zaczynają się egzaminy maturalne? – Za dwa tygodnie.",
+        "questions": [
+          {
+            "sentence": "Magda najbardziej lubi mleczną czekoladę. – ___ czekoladę Magda lubi najbardziej? – Mleczną.",
+            "answers": [
+              "jaką"
+            ],
+            "explain": "Качество шоколада: jaką czekoladę?"
+          },
+          {
+            "sentence": "Byłam wczoraj w kinie z siostrą Adama. – ___ byłaś wczoraj w kinie? – Z siostrą Adama.",
+            "answers": [
+              "z kim"
+            ],
+            "explain": "С кем: z kim?"
+          },
+          {
+            "sentence": "Anna spotkała na spacerze swoją nauczycielkę. – ___ Anna spotkała na spacerze? – Swoją nauczycielkę.",
+            "answers": [
+              "kogo"
+            ],
+            "explain": "Кого встретила: kogo?"
+          },
+          {
+            "sentence": "Chłopcy marzą o nocnej wyprawie do lasu. – ___ marzą chłopcy? – O nocnej wyprawie do lasu.",
+            "answers": [
+              "o czym"
+            ],
+            "explain": "Marzyć o чём: o czym?"
+          },
+          {
+            "sentence": "Za dwa tygodnie zaczynają się egzaminy maturalne. – ___ zaczynają się egzaminy maturalne? – Za dwa tygodnie.",
+            "answers": [
+              "kiedy",
+              "za ile czasu"
+            ],
+            "explain": "Вопрос о времени: kiedy?"
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-nov-vi",
+        "number": "VI",
+        "topic": "Преобразование предложений",
+        "title": "Преобразование предложений",
+        "passage": "Niebieska sukienka jest dużo ładniejsza niż tamta żółta. (od) Niebieska sukienka jest dużo ładniejsza od tamtej żółtej. 1. Anna ma na sobie strój kąpielowy. (ubrana) ………………………………………………………………………………………………………………………………………….. 2. Wczoraj pojechaliśmy na wycieczkę rowerową do lasu. (byliśmy) ………………………………………………………………………………………………………………………………………….. 3. Hobby Dawida to gry komputerowe. (interesuje się) ………………………………………………………………………………………………………………………………………….. 4. Jej mąż jest dyrektorem w dużej firmie energetycznej. (kieruje) ………………………………………………………………………………………………………………………………………….. 5. Czy masz jeszcze stary adres mailowy? (korzystać) …………………………………………………………………………………………………………………………………………..",
+        "questions": [
+          {
+            "sentence": "Anna ma na sobie strój kąpielowy. (ubrana)",
+            "answers": [
+              "Anna jest ubrana w strój kąpielowy"
+            ],
+            "explain": "Być ubranym w что: винительный.",
+            "manualReview": true
+          },
+          {
+            "sentence": "Wczoraj pojechaliśmy na wycieczkę rowerową do lasu. (byliśmy)",
+            "answers": [
+              "Wczoraj byliśmy na wycieczce rowerowej w lesie"
+            ],
+            "explain": "Место: na wycieczce w lesie.",
+            "manualReview": true
+          },
+          {
+            "sentence": "Hobby Dawida to gry komputerowe. (interesuje się)",
+            "answers": [
+              "Dawid interesuje się grami komputerowymi"
+            ],
+            "explain": "Interesować się требует творительного: grami.",
+            "manualReview": true
+          },
+          {
+            "sentence": "Jej mąż jest dyrektorem w dużej firmie energetycznej. (kieruje)",
+            "answers": [
+              "Jej mąż kieruje dużą firmą energetyczną"
+            ],
+            "explain": "Kierować требует творительного: firmą.",
+            "manualReview": true
+          },
+          {
+            "sentence": "Czy masz jeszcze stary adres mailowy? (korzystać)",
+            "answers": [
+              "Czy korzystasz jeszcze ze starego adresu mailowego",
+              "Czy nadal korzystasz ze starego adresu mailowego"
+            ],
+            "explain": "Korzystać z требует родительного: ze starego adresu.",
+            "manualReview": true
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-nov-vii",
+        "number": "VII",
+        "topic": "Вид и наклонение",
+        "title": "Вид и наклонение",
+        "passage": "Babcia Zosia: Powiedz mi, Krzysiu, czy pytałeś już żonę, Kasię i Jasia, gdzie chcieliby pojechać w tym roku na wakacje? Krzysztof: Nie. Wczoraj bardzo późno wróciłem z pracy i dzieci już spały. Halinka powiedziała, żebym ich już nie (obudziłbym, budził, budziliby)1. Babcia Zosia: A jak myślisz, o czym marzą? Krzysztof: Nie wiem, (musiałbym, musiałaby, musielibyście)2się głębiej nad tym zastanowić. Kasia pewnie (proponowałabym, zaproponuj, zaproponowałaby)3 wakacje nad morzem, bo uwielbia plażę. Jaś chyba by (wolałby, wolał, woli)4jakąś wyprawę rowerową na Mazury. Wiosną zapisał się w szkole do klubu rowerowego. Babcia Zosia: A Halinka? Krzysztof: To najtrudniej zgadnąć. Już słyszę jak do nas mówi: „(Jedźcie, Jechalibyście, Pojechaliby)5 w tym roku sami. Ja chętnie zostanę w domu i wreszcie będę miała czas tylko dla siebie”. Tak jest co roku. Babcia Zosia: Myślę, że gdybyście częściej (pozwoli, pozwalali, pozwalalibyście)6jej jako pierwszej wybrać miejsce wypoczynku, to (byłaby, byliby, byłoby)7inaczej. Może w tym roku niech ona sama (zdecyduje, zdecyduj, zdecydowałaby)8, gdzie i jak spędzicie wakacje. Krzysztof: A jeśli wybierze wypoczynek w agroturystyce? Babcia Zosia: Nie (zmartwiłby się, zmartwi się, martw się)9! Halinka dobrze cię zna i wie, że nie lubisz wsi. (Dałbyś, Daj, Dawaj)10 jej tylko trochę czasu do namysłu!",
+        "questions": [
+          {
+            "sentence": "Halinka powiedziała, żebym ich już nie ___ .",
+            "options": [
+              "obudziłbym",
+              "budził",
+              "budziliby"
+            ],
+            "answer": 1,
+            "explain": "После żebym не повторяем by; процесс: budził."
+          },
+          {
+            "sentence": "Krzysztof: Nie wiem, ___ się głębiej nad tym zastanowić.",
+            "options": [
+              "musiałbym",
+              "musiałaby",
+              "musielibyście"
+            ],
+            "answer": 0,
+            "explain": "Я бы должен был: musiałbym."
+          },
+          {
+            "sentence": "Kasia pewnie ___ wakacje nad morzem, bo uwielbia plażę.",
+            "options": [
+              "proponowałabym",
+              "zaproponuj",
+              "zaproponowałaby"
+            ],
+            "answer": 2,
+            "explain": "Kasia — она: zaproponowałaby."
+          },
+          {
+            "sentence": "Jaś chyba by ___ jakąś wyprawę rowerową na Mazury.",
+            "options": [
+              "wolałby",
+              "wolał",
+              "woli"
+            ],
+            "answer": 1,
+            "explain": "Частица by уже стоит перед формой: by wolał."
+          },
+          {
+            "sentence": "Już słyszę jak do nas mówi: „ ___ w tym roku sami.",
+            "options": [
+              "Jedźcie",
+              "Jechalibyście",
+              "Pojechaliby"
+            ],
+            "answer": 0,
+            "explain": "Обращение к нескольким людям: jedźcie."
+          },
+          {
+            "sentence": "Babcia Zosia: Myślę, że gdybyście częściej ___ jej jako pierwszej wybrać miejsce wypoczynku, to 〔7〕inaczej.",
+            "options": [
+              "pozwoli",
+              "pozwalali",
+              "pozwalalibyście"
+            ],
+            "answer": 1,
+            "explain": "После gdybyście форма без дополнительной частицы by: pozwalali."
+          },
+          {
+            "sentence": "Babcia Zosia: Myślę, że gdybyście częściej 〔6〕jej jako pierwszej wybrać miejsce wypoczynku, to ___ inaczej.",
+            "options": [
+              "byłaby",
+              "byliby",
+              "byłoby"
+            ],
+            "answer": 2,
+            "explain": "Безличное: byłoby inaczej."
+          },
+          {
+            "sentence": "Może w tym roku niech ona sama ___ , gdzie i jak spędzicie wakacje.",
+            "options": [
+              "zdecyduje",
+              "zdecyduj",
+              "zdecydowałaby"
+            ],
+            "answer": 0,
+            "explain": "После niech личная форма: zdecyduje."
+          },
+          {
+            "sentence": "Babcia Zosia: Nie ___ !",
+            "options": [
+              "zmartwiłby się",
+              "zmartwi się",
+              "martw się"
+            ],
+            "answer": 2,
+            "explain": "Отрицательное побуждение: nie martw się."
+          },
+          {
+            "sentence": "___ jej tylko trochę czasu do namysłu!",
+            "options": [
+              "Dałbyś",
+              "Daj",
+              "Dawaj"
+            ],
+            "answer": 1,
+            "explain": "Разовое побуждение дай: daj."
+          }
+        ]
+      },
+      {
+        "id": "adult-2023-nov-viii",
+        "number": "VIII",
+        "topic": "Предлоги",
+        "title": "Предлоги",
+        "passage": "dla przed w na przy wśród przez Ukraina była gościem honorowym Międzynarodowych Targów Książki w Warszawie, które odbyły się w dniach 25-28 maja 2023 roku w Pałacu Kultury i Nauki. Stoisko z książkami przygotował Ukraiński Instytut Książki. …………………………1 półkach stały poradniki, albumy i powieści po ukraińsku. Ponadto …………………………2cztery dni odbywały się tutaj spotkania z autorami, był też kącik gier i zabaw …………………………3 dzieci. Do Warszawy przyjechało ponad 20 autorek, autorów i przedstawicieli świata kultury z Ukrainy, …………………………4 nich: Jurij Andruchowycz, Ostap Sływynski, czy Switłana Taratorina. …………………………5 publicznością wystąpił młodzieżowy zespół muzyczny z Charkowa. listopad 2023",
+        "questions": [
+          {
+            "sentence": "___ półkach stały poradniki, albumy i powieści po ukraińsku.",
+            "options": [
+              "dla",
+              "przed",
+              "w",
+              "na",
+              "przy",
+              "wśród",
+              "przez"
+            ],
+            "answer": 3,
+            "explain": "На полках: na półkach."
+          },
+          {
+            "sentence": "Ponadto ___ cztery dni odbywały się tutaj spotkania z autorami, był też kącik gier i zabaw 〔3〕 dzieci.",
+            "options": [
+              "dla",
+              "przed",
+              "w",
+              "na",
+              "przy",
+              "wśród",
+              "przez"
+            ],
+            "answer": 6,
+            "explain": "Длительность: przez cztery dni."
+          },
+          {
+            "sentence": "Ponadto 〔2〕cztery dni odbywały się tutaj spotkania z autorami, był też kącik gier i zabaw ___ dzieci.",
+            "options": [
+              "dla",
+              "przed",
+              "w",
+              "na",
+              "przy",
+              "wśród",
+              "przez"
+            ],
+            "answer": 0,
+            "explain": "Для детей: dla dzieci."
+          },
+          {
+            "sentence": "Do Warszawy przyjechało ponad 20 autorek, autorów i przedstawicieli świata kultury z Ukrainy, ___ nich: Jurij Andruchowycz, Ostap Sływynski, czy Switłana Taratorina.",
+            "options": [
+              "dla",
+              "przed",
+              "w",
+              "na",
+              "przy",
+              "wśród",
+              "przez"
+            ],
+            "answer": 5,
+            "explain": "Среди них: wśród nich."
+          },
+          {
+            "sentence": "___ publicznością wystąpił młodzieżowy zespół muzyczny z Charkowa.",
+            "options": [
+              "dla",
+              "przed",
+              "w",
+              "na",
+              "przy",
+              "wśród",
+              "przez"
+            ],
+            "answer": 1,
+            "explain": "Перед публикой: przed publicznością."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "youth-2023-june",
+    "label": "Июнь 2023 · дети и молодёжь",
+    "date": "24–25 июня 2023 · дети и молодёжь",
+    "source": "https://certyfikatpolski.pl/wp-content/uploads/2025/07/2023_06_24_25_B1-DiM_arkusz_egzaminacyjny.pdf",
+    "scopeNote": "Грамматическая часть I (6 форм), II, III, VI, VII. Вопросы понимания текста из I и задания IV–V относятся к чтению и в грамматический квиз не включены.",
+    "exercises": [
+      {
+        "id": "youth-2023-june-i",
+        "number": "I",
+        "topic": "Формы слов и падежи",
+        "title": "Грамматические формы в коротких текстах",
+        "passage": "① Szykuje się rewolucja. Na stronie Amazona lawinowo przybywa tytułów autorstwa ChatGPT, bota, ① pozwala na napisanie książki w kilka godzin. Wykorzystywanie sztucznej inteligencji do tworzenia tekstów to perspektywa ciekawa, ale czy nie powinna nas też martwić? Co dalej? Czas pokaże. Z pewnością będzie o tym głośno!<br><br>② Tenis to nie tylko gra, to też matematyka. Trzeba wygrywać, ② są punkty, bo to one gwarantują awans sportowy. Owszem, triumfator powinien mieć w sobie fantazję i luz, ale potrzebne jest także dokładne liczenie punktów. Poza tym dobry gracz musi być dżentelmenem – twierdzi Bohdan Tomaszewski, znany komentator.<br><br>③ Od niedawna Radio Kraków proponuje ③ nowe słuchowisko. Anna Dymna podkreśla, że z wielką radością przyjęła zaproszenie do udziału w tym projekcie. „Bardzo lubię pracować nad spektaklami dla dzieci. To wymagające, ale fantastyczne wyzwanie. Wszyscy potrzebujemy pogodnych historii ze szczęśliwym zakończeniem” – wyznała aktorka.<br><br>④ Tradycyjnie już pod koniec roku przedstawiamy wyniki konkursu na hotel ④ przyjaźnie nastawiony do psów. Czytajcie nasze rankingi, przeglądajcie obiekty, które wam się spodobały, i już teraz kliknijcie przycisk „zapytaj o rezerwację na kolejny rok”!<br><br>⑤ Blog o rowerach elektrycznych to miejsce, w którym znaleźć można kolekcję wszystkich naszych ⑤. Uporządkowaliśmy je według tematów, które poruszają. Poświęciliśmy na to swój czas, bo lubimy się dzielić wiedzą i chcemy, aby dotarła ona do jak największego grona czytelników.<br><br>⑥ Jak zrobić naleśniki? Do miski wsyp pełną szklankę mąki pszennej. Następnie wbij ⑥ średniej wielkości jajka i wlej szklankę mleka oraz szklankę wody. Dodaj szczyptę soli i łyżkę oleju roślinnego. Wszystko dokładnie wymieszaj, odczekaj trzydzieści minut i smaż z obu stron na złoty kolor. Smacznego!",
+        "questions": [
+          {
+            "sentence": "bota, ___ pozwala na napisanie książki",
+            "options": [
+              "która",
+              "który",
+              "które"
+            ],
+            "answer": 1,
+            "explain": "Bot — мужской род. Относительное местоимение как подлежащее: który pozwala."
+          },
+          {
+            "sentence": "Trzeba wygrywać, ___ są punkty",
+            "options": [
+              "ważny",
+              "ważniejszymi",
+              "najważniejsze"
+            ],
+            "answer": 2,
+            "explain": "Punkty — множественное число немужского личного рода. Прилагательное в превосходной степени: najważniejsze są punkty."
+          },
+          {
+            "sentence": "Radio Kraków proponuje ___ nowe słuchowisko",
+            "options": [
+              "dzieci",
+              "dzieciom",
+              "dziećmi"
+            ],
+            "answer": 1,
+            "explain": "Предлагать кому: proponować dzieciom. Нужен дательный падеж множественного числа."
+          },
+          {
+            "sentence": "konkurs na hotel ___ przyjaźnie nastawiony do psów",
+            "options": [
+              "bardzo",
+              "bardziej",
+              "najbardziej"
+            ],
+            "answer": 2,
+            "explain": "Конкурс определяет лучший среди отелей: превосходная степень наречия najbardziej при przyjaźnie nastawiony."
+          },
+          {
+            "sentence": "kolekcję wszystkich naszych ___",
+            "options": [
+              "artykułach",
+              "artykułami",
+              "artykułów"
+            ],
+            "answer": 2,
+            "explain": "Коллекция чего: родительный падеж множественного числа, kolekcja artykułów."
+          },
+          {
+            "sentence": "Następnie wbij ___ średniej wielkości jajka",
+            "options": [
+              "cztery",
+              "czworo",
+              "czterech"
+            ],
+            "answer": 0,
+            "explain": "Для существительного jajka употребляется количественное числительное cztery. Czworo используют с детьми, людьми смешанной группы и некоторыми особыми существительными."
+          }
+        ]
+      },
+      {
+        "id": "youth-2023-june-ii",
+        "number": "II",
+        "topic": "Преобразование предложений",
+        "title": "Завершение предложений: восемнадцатилетие",
+        "passage": "„Osiemnastka” to wyjątkowe urodziny, dlatego warto je spędzić w dużym gronie przyjaciół.<br>① Na początku należy pomyśleć o lokalu, w którym bez problemu ___.<br>② Na liście zaproszonych osób powinni znaleźć się nie tylko najbliżsi przyjaciele, ___.<br>③ Warto zorganizować urodziny tematyczne i zaproponować gościom ___.<br>④ Dobrze też zadbać o to, aby zaproszenia ___.<br>⑤ Na koniec obowiązkowo zadbajmy o różnorodne przekąski, aby każdy ___.",
+        "questions": [
+          {
+            "sentence": "Na początku należy pomyśleć o lokalu, w którym bez problemu ___",
+            "options": [
+              "zmieszczą się nasi goście.",
+              "zmieścili się nasi goście.",
+              "zmieścić naszych gości."
+            ],
+            "answer": 0,
+            "explain": "Планируя будущее торжество, говорим о гостях, которые поместятся: zmieszczą się. Нужна личная будущая форма."
+          },
+          {
+            "sentence": "Na liście ... powinni znaleźć się nie tylko najbliżsi przyjaciele, ___",
+            "options": [
+              "oraz trochę dalsi znajomi.",
+              "ale i trochę dalsi znajomi.",
+              "i trochę dalsi znajomi."
+            ],
+            "answer": 1,
+            "explain": "Устойчивая парная конструкция: nie tylko ..., ale i ... — не только ..., но и ... ."
+          },
+          {
+            "sentence": "Warto ... zaproponować gościom ___",
+            "options": [
+              "główny temat.",
+              "głównego tematu.",
+              "w głównym temacie."
+            ],
+            "answer": 0,
+            "explain": "Zaproponować что — винительный падеж: główny temat. Gościom уже обозначает адресата в дательном падеже."
+          },
+          {
+            "sentence": "Dobrze też zadbać o to, aby zaproszenia ___",
+            "options": [
+              "będą odpowiadać tematowi imprezy.",
+              "odpowiednie dla tematu imprezy.",
+              "odpowiadały tematyce imprezy."
+            ],
+            "answer": 2,
+            "explain": "После aby с личным подлежащим употребляется форма на -ły: aby zaproszenia odpowiadały. Частицу by отдельно не добавляем."
+          },
+          {
+            "sentence": "zadbajmy o różnorodne przekąski, aby każdy ___",
+            "options": [
+              "szukał czegoś u siebie.",
+              "znalazł coś dla siebie.",
+              "znalazł to w sobie."
+            ],
+            "answer": 1,
+            "explain": "Цель — чтобы каждый нашёл что-нибудь для себя. Устойчивое сочетание znaleźć coś dla siebie."
+          }
+        ]
+      },
+      {
+        "id": "youth-2023-june-iii",
+        "number": "III",
+        "topic": "Вид и наклонение",
+        "title": "Реплики в диалогах",
+        "passage": "① Spotykasz się dziś z Pawłem?<br>② Jestem taka zmęczona… Chyba się położę.<br>③ Słyszałem, że wygrałaś ten konkurs piosenki!<br>④ Ale dramat z tym sprawdzianem z matematyki! Nikt nie zaliczył.<br>⑤ Hej Tomek, masz teraz chwilę?<br>⑥ Wiesz już, co założysz na studniówkę?",
+        "questions": [
+          {
+            "sentence": "Spotykasz się dziś z Pawłem?",
+            "options": [
+              "Tak, umówiłbym się na dziesiątą.",
+              "Tak, umówiłyśmy się na dziesiątą.",
+              "Tak, umówiliśmy się na dziesiątą."
+            ],
+            "answer": 2,
+            "explain": "Встреча уже назначена: прошедшее umówiliśmy się. В группе есть Paweł, поэтому мужская личная форма, не umówiłyśmy się."
+          },
+          {
+            "sentence": "Jestem taka zmęczona… Chyba się położę.",
+            "options": [
+              "Śmiało, umiesz chwilę odpocząć.",
+              "Śmiało, musisz chwilę odpocząć.",
+              "Śmiało, chcesz chwilę odpocząć."
+            ],
+            "answer": 1,
+            "explain": "В ответ на усталость подходит совет необходимости: musisz chwilę odpocząć — тебе нужно немного отдохнуть."
+          },
+          {
+            "sentence": "Słyszałem, że wygrałaś ten konkurs piosenki!",
+            "options": [
+              "Tak, bardzo ją ta wygrana cieszy.",
+              "Tak, bardzo go ta wygrana cieszy.",
+              "Tak, bardzo mnie ta wygrana cieszy."
+            ],
+            "answer": 2,
+            "explain": "Победительница говорит о себе: mnie ta wygrana cieszy — эта победа радует меня. Mnie — винительный падеж."
+          },
+          {
+            "sentence": "Ale dramat z tym sprawdzianem z matematyki! Nikt nie zaliczył.",
+            "options": [
+              "Nawet mi nie mów, ciągle o tym myślę!",
+              "Nawet mi nie mów, ciągle o niej myślę.",
+              "Nawet mi nie mów, ciągle o nim myśli."
+            ],
+            "answer": 0,
+            "explain": "О событии «это» говорят o tym. Отвечающий говорит о себе: myślę, а не myśli."
+          },
+          {
+            "sentence": "Hej Tomek, masz teraz chwilę?",
+            "options": [
+              "Nie za bardzo, bo idę na piłkę.",
+              "Nie za bardzo, bo pójdę na piłkę.",
+              "Nie za bardzo, bo poszedł na piłkę."
+            ],
+            "answer": 0,
+            "explain": "Речь о ближайшем текущем плане: сейчас иду играть, idę. Poszedł — он пошёл, иная форма лица."
+          },
+          {
+            "sentence": "Wiesz już, co założysz na studniówkę?",
+            "options": [
+              "Chyba będę zakładać tę granatową sukienkę.",
+              "Chyba założyłam tę granatową sukienkę.",
+              "Chyba założę tę granatową sukienkę."
+            ],
+            "answer": 2,
+            "explain": "Одно будущее завершённое действие «надену»: założę, совершенный вид. Założyłam описывает прошлое."
+          }
+        ]
+      },
+      {
+        "id": "youth-2023-june-vi",
+        "number": "VI",
+        "topic": "Союзы",
+        "title": "Союзы",
+        "passage": "Polskę ogarnął szał zdrowego odżywiania. Nic więc dziwnego, że dieta i gotowanie to gorące tematy we wszystkich mediach. Programy telewizyjne uczą, jak przyrządzać zdrowe posiłki, (i, a, bo) 1 blogi pisane przez ekspertów wspierają w zmianie nawyków żywieniowych. (Mimo to, Choć, Ponadto) 2 podążanie za trendami jest ułatwione przez powszechny dostęp do internetu. Prawie w każdym miejscu na świecie możemy połączyć się z siecią, (żeby, lecz, jednak) 3 sprawdzić nasz plan żywieniowy. Zdrowa dieta oznacza nie tylko dobre samopoczucie, (poza tym, lecz także, a zatem) 4 lepsze życie. Wiemy, (jednak, że, bo) 5 żywność bezpośrednio wpływa na nasz organizm. To, co jemy, może organizmowi szkodzić (a, lub, czy) 6 mu służyć, dlatego tak ważny jest świadomy wybór. (Jeżeli, Aby, Choć)7 pragniemy zachować zdrowie, powinniśmy spożywać produkty, które sprzyjają organizmowi. Odpowiednia dieta (toteż, czyli, oraz) 8 osobisty doradca żywieniowy na ekranie smartfona czy tabletu to dobra droga do smukłej sylwetki, świetnego samopoczucia i lepszego zdrowia.",
+        "questions": [
+          {
+            "sentence": "Programy telewizyjne uczą, jak przyrządzać zdrowe posiłki, ___ blogi pisane przez ekspertów wspierają w zmianie nawyków żywieniowych.",
+            "options": [
+              "i",
+              "a",
+              "bo"
+            ],
+            "answer": 1,
+            "explain": "A сопоставляет две части: телепрограммы учат, а блоги поддерживают."
+          },
+          {
+            "sentence": "___ podążanie za trendami jest ułatwione przez powszechny dostęp do internetu.",
+            "options": [
+              "Mimo to",
+              "Choć",
+              "Ponadto"
+            ],
+            "answer": 2,
+            "explain": "Ponadto добавляет ещё одно преимущество — кроме того."
+          },
+          {
+            "sentence": "Prawie w każdym miejscu na świecie możemy połączyć się z siecią, ___ sprawdzić nasz plan żywieniowy.",
+            "options": [
+              "żeby",
+              "lecz",
+              "jednak"
+            ],
+            "answer": 0,
+            "explain": "Żeby вводит цель подключения к сети: чтобы проверить план."
+          },
+          {
+            "sentence": "Zdrowa dieta oznacza nie tylko dobre samopoczucie, ___ lepsze życie.",
+            "options": [
+              "poza tym",
+              "lecz także",
+              "a zatem"
+            ],
+            "answer": 1,
+            "explain": "Парная конструкция nie tylko ..., lecz także ... ."
+          },
+          {
+            "sentence": "Wiemy, ___ żywność bezpośrednio wpływa na nasz organizm.",
+            "options": [
+              "jednak",
+              "że",
+              "bo"
+            ],
+            "answer": 1,
+            "explain": "После wiemy содержание знания вводится союзом że."
+          },
+          {
+            "sentence": "To, co jemy, może organizmowi szkodzić ___ mu służyć, dlatego tak ważny jest świadomy wybór.",
+            "options": [
+              "a",
+              "lub",
+              "czy"
+            ],
+            "answer": 1,
+            "explain": "Альтернативные последствия: szkodzić lub służyć."
+          },
+          {
+            "sentence": "___ pragniemy zachować zdrowie, powinniśmy spożywać produkty, które sprzyjają organizmowi.",
+            "options": [
+              "Jeżeli",
+              "Aby",
+              "Choć"
+            ],
+            "answer": 0,
+            "explain": "Jeżeli вводит условие: если хотим сохранить здоровье."
+          },
+          {
+            "sentence": "Odpowiednia dieta ___ osobisty doradca żywieniowy na ekranie smartfona czy tabletu to dobra droga do smukłej sylwetki, świetnego samopoczucia i lepszego zdrowia.",
+            "options": [
+              "toteż",
+              "czyli",
+              "oraz"
+            ],
+            "answer": 2,
+            "explain": "Oraz соединяет два помощника на пути к здоровью — диету и советчика."
+          }
+        ]
+      },
+      {
+        "id": "youth-2023-june-vii",
+        "number": "VII",
+        "topic": "Формы слов и падежи",
+        "title": "Формы слов и падежи",
+        "passage": "Pod koniec czwartego semestru wydarzyło się coś, co sprawiło, że Kuba przeszedł do legendy . Podczas egzaminu, który co roku z wielkim trudem zdawała większość (studenci, studentom, studentów) 1 , profesor nagle wstał zza biurka i wyszedł bez słowa. Wszyscy podnieśli wzrok i przez moment w (salę, salą, sali) 2 była absolutna cisza, przerwana dopiero dźwiękiem zamykanych drzwi. W tym (momentem, momentu, momencie) 3 studenci rzucili się do sprawdzania swoich toreb i plecaków w poszukiwaniu notatek. Przez kilka minut poziom wiedzy drugiego roku (praw, prawu, prawa) 4 wzrósł o kilkaset procent. Profesor wrócił, usiadł i ze (spokojem, spokoju, spokojach) 5 zaczekał, aż wszyscy oddadzą testy. Pożegnał się informacją, że wyniki będą za (tygodniem, tydzień, tygodnie) 6 . Jak się okazało, wszyscy dostali z testu czwórki i piątki. Jedyną oceną dostateczną była trója Kuby. - Wszyscy „uczciwie” ściągaliście – komentował profesor. - Tak, wiem o tym. „Uczciwie”, bo każdy otrzymał (szansy, szansę, szansą) 7 – taką samą – i każdy z niej skorzystał. Tylko pan Kuba zdecydował, że faktycznie sprawdzi swoją wiedzę. Zakończył może (egzaminem, egzaminu, egzamin) 8 z niższą oceną, ale za to wie, co naprawdę umie, a czego nie.",
+        "questions": [
+          {
+            "sentence": "Podczas egzaminu, który co roku z wielkim trudem zdawała większość ___ , profesor nagle wstał zza biurka i wyszedł bez słowa.",
+            "options": [
+              "studenci",
+              "studentom",
+              "studentów"
+            ],
+            "answer": 2,
+            "explain": "Większość требует родительного множественного числа: studentów."
+          },
+          {
+            "sentence": "Wszyscy podnieśli wzrok i przez moment w ___ była absolutna cisza, przerwana dopiero dźwiękiem zamykanych drzwi.",
+            "options": [
+              "salę",
+              "salą",
+              "sali"
+            ],
+            "answer": 2,
+            "explain": "В аудитории: w sali, местный падеж."
+          },
+          {
+            "sentence": "W tym ___ studenci rzucili się do sprawdzania swoich toreb i plecaków w poszukiwaniu notatek.",
+            "options": [
+              "momentem",
+              "momentu",
+              "momencie"
+            ],
+            "answer": 2,
+            "explain": "В этот момент: w tym momencie, местный падеж."
+          },
+          {
+            "sentence": "Przez kilka minut poziom wiedzy drugiego roku ___ wzrósł o kilkaset procent.",
+            "options": [
+              "praw",
+              "prawu",
+              "prawa"
+            ],
+            "answer": 2,
+            "explain": "Учебный курс: rok prawa, родительный."
+          },
+          {
+            "sentence": "Profesor wrócił, usiadł i ze ___ zaczekał, aż wszyscy oddadzą testy.",
+            "options": [
+              "spokojem",
+              "spokoju",
+              "spokojach"
+            ],
+            "answer": 0,
+            "explain": "Со спокойствием: ze spokojem, творительный."
+          },
+          {
+            "sentence": "Pożegnał się informacją, że wyniki będą za ___ .",
+            "options": [
+              "tygodniem",
+              "tydzień",
+              "tygodnie"
+            ],
+            "answer": 1,
+            "explain": "Через неделю: za tydzień, винительный."
+          },
+          {
+            "sentence": "„Uczciwie”, bo każdy otrzymał ___ – taką samą – i każdy z niej skorzystał.",
+            "options": [
+              "szansy",
+              "szansę",
+              "szansą"
+            ],
+            "answer": 1,
+            "explain": "Получил что: szansę, винительный женского рода."
+          },
+          {
+            "sentence": "Zakończył może ___ z niższą oceną, ale za to wie, co naprawdę umie, a czego nie.",
+            "options": [
+              "egzaminem",
+              "egzaminu",
+              "egzamin"
+            ],
+            "answer": 2,
+            "explain": "Завершил что: egzamin, винительный мужского неодушевлённого рода."
+          }
+        ]
+      }
+    ]
+  }
+]

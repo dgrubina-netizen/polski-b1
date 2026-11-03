@@ -1,0 +1,207 @@
+[
+  {
+    "id": "youth-2024-june",
+    "label": "Июнь 2024 · дети и молодёжь",
+    "date": "22–23 июня 2024 · дети и молодёжь",
+    "source": "https://certyfikatpolski.pl/wp-content/uploads/2025/02/22-23.06.2024-B1-DIM_arkusz_egzaminacyjny.pdf",
+    "exercises": [
+      {
+        "id": "youth24-I",
+        "number": "I",
+        "topic": "Формы слов и падежи",
+        "title": "Грамматические формы в коротких текстах",
+        "passage": "<p>Грамматическая часть задания I. Вопросы на понимание текста относятся к чтению и не входят в этот квиз.</p>poprosili 126 studentów o przeczytanie zapisu (1) ___ rozmów<br><br>problem głodu można rozwiązać (2) ___ niż wszyscy sądzą<br><br>uczniowie gimnazjum, (3) ___ bardzo chcieli się dowiedzieć<br><br>w wieku sześćdziesięciu (4) ___ lat<br><br>znani mistrzowie wybiorą (5) ___ prace<br><br>Zależy (6) ___, żeby robił zdjęcia dobre jakościowo",
+        "questions": [
+          {
+            "sentence": "poprosili 126 studentów o przeczytanie zapisu ___ rozmów",
+            "options": [
+              "siedemnaście",
+              "siedemnastoma",
+              "siedemnastu"
+            ],
+            "answer": 2,
+            "explain": "После zapisu требуется родительный падеж: siedemnastu rozmów."
+          },
+          {
+            "sentence": "problem głodu można rozwiązać ___ niż wszyscy sądzą",
+            "options": [
+              "szybko",
+              "szybciej",
+              "najszybciej"
+            ],
+            "answer": 1,
+            "explain": "Сравнение с niż: szybciej — быстрее."
+          },
+          {
+            "sentence": "uczniowie gimnazjum, ___ bardzo chcieli się dowiedzieć",
+            "options": [
+              "których",
+              "którzy",
+              "którego"
+            ],
+            "answer": 1,
+            "explain": "Подлежащее ученики во множественном числе: którzy."
+          },
+          {
+            "sentence": "w wieku sześćdziesięciu ___ lat",
+            "options": [
+              "trzech",
+              "trzy",
+              "trzema"
+            ],
+            "answer": 0,
+            "explain": "Числительное в родительном падеже: sześćdziesięciu trzech lat."
+          },
+          {
+            "sentence": "znani mistrzowie wybiorą ___ prace",
+            "options": [
+              "dobre",
+              "lepsze",
+              "najlepsze"
+            ],
+            "answer": 2,
+            "explain": "Выбирают лучшие конкурсные работы: najlepsze."
+          },
+          {
+            "sentence": "Zależy ___, żeby robił zdjęcia dobre jakościowo",
+            "options": [
+              "mnie",
+              "mi",
+              "mną"
+            ],
+            "answer": 1,
+            "explain": "Безударная форма дательного падежа в середине фразы: zależy mi."
+          }
+        ]
+      },
+      {
+        "id": "youth24-II",
+        "number": "II",
+        "topic": "Структура предложения",
+        "title": "Грамматические окончания предложений",
+        "passage": "Przykład: Okazuje się, że jedzenie czekolady ma mnóstwo zalet.<br><br>Czekolada ...<br>Działa uspokajająco i obniża ...<br>Ogromną wartością czekolady jest ...<br>Jest to również źródło ...<br>Szczególnie w trudnych chwilach czekolada przyda się ...",
+        "questions": [
+          {
+            "sentence": "Czekolada ...",
+            "options": [
+              "przede wszystkim poprawia humor.",
+              "na poprawienie humoru.",
+              "poprawić humor."
+            ],
+            "answer": 0,
+            "explain": "Подлежащему czekolada соответствует личная форма глагола poprawia."
+          },
+          {
+            "sentence": "Działa uspokajająco i obniża ...",
+            "options": [
+              "przez poziom stresu.",
+              "poziomem stresu.",
+              "poziom stresu."
+            ],
+            "answer": 2,
+            "explain": "Obniżać что? Винительный падеж: poziom stresu."
+          },
+          {
+            "sentence": "Ogromną wartością czekolady jest ...",
+            "options": [
+              "spowalniać proces starzenia się organizmu.",
+              "to, że spowalnia proces starzenia się organizmu.",
+              "okazuje się spowolnienie procesu starzenia."
+            ],
+            "answer": 1,
+            "explain": "После jest раскрывается содержание через to, że и личную форму глагола."
+          },
+          {
+            "sentence": "Jest to również źródło ...",
+            "options": [
+              "i wiele wartości odżywczych.",
+              "wielu wartości odżywczych.",
+              "wielu wartościom odżywczym."
+            ],
+            "answer": 1,
+            "explain": "Źródło чего? Родительный падеж: wielu wartości odżywczych."
+          },
+          {
+            "sentence": "Szczególnie w trudnych chwilach czekolada przyda się ...",
+            "options": [
+              "każdym z was.",
+              "z każdym z was.",
+              "każdemu z was."
+            ],
+            "answer": 2,
+            "explain": "Przydać się кому? Дательный падеж: każdemu z was."
+          }
+        ]
+      },
+      {
+        "id": "youth24-III",
+        "number": "III",
+        "topic": "Вид и наклонение",
+        "title": "Грамматика в диалогах",
+        "passage": "Jesteś teraz u weterynarza? Świetnie! Co się teraz dzieje z naszym pieskiem?<br><br>Już tak późno?! Za chwilę mam spotkanie z Piotrkiem. Na pewno się spóźnię.<br><br>Mamo, idę grać na konsoli, tak jak się umawiałyśmy.<br><br>Cześć, podobno masz do mnie jakieś pytanie. Tak, chciałbym zabrać Anię na randkę do kina.<br><br>Co myślisz o tej książce?<br><br>Kasiu, poczekaj! A gdzie masło? Na kanapkach musi być masło! A ty, Michale, co o tym myślisz?",
+        "questions": [
+          {
+            "sentence": "Jesteś teraz u weterynarza? Świetnie! Co się teraz dzieje z naszym pieskiem?",
+            "options": [
+              "Właśnie bada weterynarza.",
+              "Właśnie się bada.",
+              "Właśnie bada go weterynarz."
+            ],
+            "answer": 2,
+            "explain": "Ветеринар — подлежащее; go обозначает собаку как объект действия."
+          },
+          {
+            "sentence": "Już tak późno?! Za chwilę mam spotkanie z Piotrkiem. Na pewno się spóźnię.",
+            "options": [
+              "Napisz do niego, na pewno zaczeka.",
+              "Piszesz do niego, na pewno zaczeka.",
+              "Napisałbyś do niego, na pewno zaczeka."
+            ],
+            "answer": 0,
+            "explain": "Совет выражается повелительным наклонением: napisz."
+          },
+          {
+            "sentence": "Mamo, idę grać na konsoli, tak jak się umawiałyśmy.",
+            "options": [
+              "A sprzątasz już swój pokój?",
+              "A nie sprzątałaś już pokoju?",
+              "A posprzątałaś już swój pokój?"
+            ],
+            "answer": 2,
+            "explain": "Проверяется завершённый результат перед игрой: posprzątałaś."
+          },
+          {
+            "sentence": "Cześć, podobno masz do mnie jakieś pytanie. Tak, chciałbym zabrać Anię na randkę do kina.",
+            "options": [
+              "Wiesz, czy widziałaś już ten film?",
+              "Wiesz, czy widziałem już ten film?",
+              "Wiesz, czy widziała już ten film?"
+            ],
+            "answer": 2,
+            "explain": "Вопрос о третьем лице, Ане: czy widziała?"
+          },
+          {
+            "sentence": "Co myślisz o tej książce?",
+            "options": [
+              "Jest ok. Dobrze ją czytałam.",
+              "Jest ok. Dobrze się ją czytało.",
+              "Jest ok. Dobrze się czytała."
+            ],
+            "answer": 1,
+            "explain": "Безличная конструкция się с объектом ją: dobrze się ją czytało."
+          },
+          {
+            "sentence": "Kasiu, poczekaj! A gdzie masło? Na kanapkach musi być masło! A ty, Michale, co o tym myślisz?",
+            "options": [
+              "Sam nie wiem. Trzeba posmarować masłem.",
+              "Sam nie wiem. Można posmarować masłem.",
+              "Sam nie wiem. Musisz posmarować masłem."
+            ],
+            "answer": 1,
+            "explain": "Można выражает возможность, а не обязательность; это подходит к нерешительному мнению Sam nie wiem."
+          }
+        ]
+      }
+    ]
+  }
+]

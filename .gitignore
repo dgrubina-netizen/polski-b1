@@ -1,0 +1,15 @@
+
+# Source extraction diagnostics and generated deliverables
+data/raw-*
+data/source-*
+data/sections-*
+data/build-*
+data/legacy-raw.json
+preview-*.png
+Polski-B1.zip
+__pycache__/
+
+# One-time content preparation helpers
+build-content-2021.py
+finish-content-2021.py
+polish-2021.py
