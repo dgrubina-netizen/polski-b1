@@ -76,7 +76,7 @@ def prompt_fields(exercise, fields):
         else:
             prompt += f' <div class="prompt-answer">{field}</div>'
         items.append(f'<li lang="pl">{prompt}</li>')
-    context = f'<details class="original-context"><summary>Исходный текст задания</summary><div lang="pl">{exercise["passage"]}</div></details>'
+    context = f'<details class="original-context" open><summary>Исходный текст задания</summary><div lang="pl">{exercise["passage"]}</div></details>'
     return context + '<ol class="prompt-fields">' + ''.join(items) + '</ol>'
 
 parts=[(root/'src/head.html').read_text(encoding='utf-8'),'''<div class="browse-controls">
@@ -85,31 +85,44 @@ parts=[(root/'src/head.html').read_text(encoding='utf-8'),'''<div class="browse-
 </div>
 <p class="muted" id="no-exercises" role="status" hidden>Нет заданий для этого экзамена и темы. Попробуйте изменить фильтры.</p>
 <nav id="exercise-navigation" class="exercise-navigation" aria-label="Переход между заданиями" hidden>
-    <button id="previous-exercise" type="button">Назад</button>
-    <button id="next-exercise" type="button">Дальше</button>
+    <button id="previous-exercise" type="button">← Предыдущее задание</button>
+    <button id="next-exercise" type="button">Следующее задание →</button>
 </nav>''']
 flat=[(e,x) for e in exams for x in e['exercises']]
-parts.append('<div class="error-export"><button type="button" id="download-errors" disabled>Скачать ошибки · 0</button><span>Ошибки хранятся до закрытия или обновления страницы.</span></div>')
 questions=sum(len(x['questions']) for _,x in flat)
-parts.append(f'<p class="muted">Варианты: {len(exams)} · Задания: {len(flat)} · Вопросы: {questions}.</p><div class="grid"><div>')
 for i, (e, x) in enumerate(flat):
     fields = [answer_field(q, i, n) for n, q in enumerate(x['questions'], 1)]
     passage = inline_passage(x, fields) or prompt_fields(x, fields)
-    instructions = '<p class="muted">Заполните нужные поля и проверьте задание целиком. Любое поле можно оставить пустым.</p>'
-    if x.get('choiceLimits'):
-        instructions += '<p class="muted">Выбранные варианты занимают свои места в общей рамке.</p>'
-    controls = (f'<div class="inline-controls"><p class="muted" id="gap-count-{i}"></p>'
-                f'<button class="button" type="button" id="gap-check-{i}">Проверить задание</button>'
+    instructions = '<p class="muted">Заполняй поля в любом порядке. Пропуски можно оставить пустыми.</p>'
+    limits = x.get('choiceLimits')
+    if limits:
+        words = ' · '.join(esc(word) + (f' ×{count}' if count > 1 else '') for word, count in limits.items())
+        instructions += f'<div class="word-bank"><span>Слова из рамки</span><span lang="pl">{words}</span></div>'
+    controls = (f'<div class="inline-controls"><div class="check-row" id="gap-check-row-{i}">'
+                f'<div class="check-progress"><p class="muted" id="gap-count-{i}"></p>'
+                f'<progress id="gap-progress-{i}" value="0" max="{len(fields)}" aria-label="Заполнено пропусков"></progress></div>'
+                f'<button class="button" type="button" id="gap-check-{i}"><span aria-hidden="true">✓</span> Проверить</button></div>'
                 f'<div id="gap-result-{i}" class="inline-results" role="status" aria-live="polite" hidden></div>'
                 f'<button class="button" type="button" id="gap-restart-{i}" hidden>Пройти ещё раз</button></div>')
-    parts.append(f'<article class="card" id="passage-{i}" hidden><div class="exam"><div class="label">{esc(e["label"])}</div><span class="pill">B1 · задание {esc(x["number"])}</span></div><div id="exercise-nav-slot-{i}"></div><h2 id="exercise-title-{i}" tabindex="-1">{esc(x.get("title",x["topic"]))}</h2>{instructions}<div class="passage">{passage}</div>{controls}<hr class="divider"><div class="source"><a href="{esc(e["source"])}" target="_blank" rel="noopener noreferrer">Оригинальный экзамен ↗</a><br>{esc(e.get("note",""))}<br>Материал Государственной комиссии по подтверждению знания польского языка. Ответы подготовлены для учебной проверки.</div></article>')
-parts.append('</div></div>')
-sources=json.loads((root/'data/sources.json').read_text(encoding='utf-8'));parts.append(f'<details class="catalog"><summary>Все опубликованные экзамены B1 · {len(sources)} источников</summary><ul>')
+    note = f'<p>{esc(e["note"])}</p>' if e.get("note") else ''
+    parts.append(
+        f'<article class="card" id="passage-{i}" hidden>'
+        f'<div class="exam-meta"><span>{esc(e["label"])}</span><span>Задание {esc(x["number"])}</span></div>'
+        f'<h2 id="exercise-title-{i}" tabindex="-1">{esc(x.get("title",x["topic"]))}</h2>{instructions}'
+        f'<div class="passage">{passage}</div>{controls}<hr class="divider">'
+        f'<div class="source"><a href="{esc(e["source"])}" target="_blank" rel="noopener noreferrer">Оригинальный экзамен ↗</a>{note}'
+        '<p>Материал Государственной комиссии по подтверждению знания польского языка. Ответы подготовлены для учебной проверки.</p></div>'
+        f'<div id="exercise-nav-slot-{i}"></div></article>'
+    )
+parts.append('<div class="error-export"><button type="button" id="download-errors" disabled>Скачать ошибки · 0</button><span>Ошибки хранятся до закрытия или обновления страницы.</span></div>')
+sources=json.loads((root/'data/sources.json').read_text(encoding='utf-8'))
+parts.append(f'<details class="catalog"><summary>Все опубликованные экзамены B1 · {len(sources)} источников</summary>'
+             f'<p class="muted">Варианты: {len(exams)} · Задания: {len(flat)} · Вопросы: {questions}.</p><ul>')
 for item in sources:
     e=next((e for e in exams if e['source']==item['source']),None)
     status=f'В квизе: {len(e["exercises"])} заданий' if e else 'В квиз ещё не добавлен'
     parts.append(f'<li><a href="{esc(item["source"])}" target="_blank" rel="noopener noreferrer">{esc(item["label"])} ↗</a><span>{status}</span></li>')
-parts.append('</ul></details><div class="footer">Маленькие шаги каждый день · Powodzenia!</div></main>')
+parts.append('</ul></details></main></div>')
 payload=json.dumps(exams,ensure_ascii=False).replace('</','<\\/')
 parts.append('<script>\nconst exams='+payload+';\n'+(root/'src/app.js').read_text(encoding='utf-8-sig')+'\n</script></body></html>')
 output='\n'.join(parts).replace('</style>','[hidden]{display:none!important}</style>')

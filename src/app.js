@@ -1,4 +1,26 @@
 const $ = id => document.getElementById(id);
+const paletteSelect = $('palette-select');
+const paletteStorageKey = 'polski-b1-palette';
+try {
+  const savedPalette = localStorage.getItem(paletteStorageKey);
+  if (savedPalette) {
+    const defaultPalette = paletteSelect.value;
+    paletteSelect.value = savedPalette;
+    if (!paletteSelect.value) paletteSelect.value = defaultPalette;
+  }
+} catch {
+  // The trainer also runs when browser storage is unavailable.
+}
+$('trainer').setAttribute('data-palette', paletteSelect.value);
+paletteSelect.addEventListener('change', () => {
+  $('trainer').setAttribute('data-palette', paletteSelect.value);
+  try {
+    localStorage.setItem(paletteStorageKey, paletteSelect.value);
+  } catch {
+    // The choice still applies for the current page.
+  }
+});
+
 const exercises = exams.flatMap(exam => exam.exercises.map(exercise => ({...exercise, exam: exam.label, date:exam.date, source:exam.source})));
 const mistakes = [];
 let current = null;
@@ -39,6 +61,7 @@ function updateInlineProgress(which) {
     });
   }
   $(`gap-count-${which}`).textContent = `Заполнено ${filled} из ${fields.length}`;
+  $(`gap-progress-${which}`).value = filled;
   $(`gap-check-${which}`).disabled = overLimit;
 }
 
@@ -48,7 +71,7 @@ function resetInline(which) {
     field.disabled = false;
     field.className = 'inline-answer';
   });
-  $(`gap-count-${which}`).hidden = false;
+  $(`gap-check-row-${which}`).hidden = false;
   $(`gap-check-${which}`).hidden = false;
   const result = $(`gap-result-${which}`);
   result.hidden = true;
@@ -133,7 +156,7 @@ function checkInline(which) {
   result.append(summary, review);
   result.hidden = false;
   button.hidden = true;
-  $(`gap-count-${which}`).hidden = true;
+  $(`gap-check-row-${which}`).hidden = true;
   $(`gap-restart-${which}`).hidden = false;
 }
 function recordMistake(exercise, index, answer, expected, skipped) {
