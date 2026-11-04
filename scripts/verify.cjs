@@ -1,9 +1,9 @@
 const fs=require('fs'),vm=require('vm');
 const html=fs.readFileSync('index.html','utf8'),script=html.match(/<script>([\s\S]*?)<\/script>/)[1];
-class Element{constructor(){this.children=[];this.style={};this.listeners={};this.value='';this.disabled=false;this.hidden=false;this.attrs={}}setAttribute(k,v){this.attrs[k]=v}addEventListener(t,f){this.listeners[t]=f}append(...nodes){for(const n of nodes){const i=this.children.indexOf(n);if(i>=0)this.children.splice(i,1);this.children.push(n)}if(this.isSelect&&this.children.length===1)this.value=nodes[0].value}replaceChildren(){this.children=[];if(this.isSelect)this.value=''}querySelector(){return this.selected}querySelectorAll(){return []}click(){this.clicked=true}remove(){}}
+class Element{constructor(){this.children=[];this.style={};this.listeners={};this.value='';this.disabled=false;this.hidden=false;this.attrs={}}setAttribute(k,v){this.attrs[k]=v}addEventListener(t,f){this.listeners[t]=f}append(...nodes){for(const n of nodes){const i=this.children.indexOf(n);if(i>=0)this.children.splice(i,1);this.children.push(n)}if(this.isSelect&&this.children.length===1)this.value=nodes[0].value}replaceChildren(){this.children=[];if(this.isSelect)this.value=''}querySelector(){return this.selected}querySelectorAll(){return []}click(){this.clicked=true}focus(){this.focused=true}remove(){}}
 const els={},document={body:new Element(),getElementById(id){const e=els[id] ||=new Element();if(id==='category-select')e.isSelect=true;return e},createElement(){return new Element()}};
 let downloaded;const URL={createObjectURL(blob){downloaded=blob;return 'blob:test'},revokeObjectURL(){}};class Blob{constructor(parts){this.parts=parts}}
-const state=new Function('document','URL','Blob','setTimeout',script+';return {exams,exercises,mistakes,start,buildErrorReport};')(document,URL,Blob,fn=>fn());
+const state=new Function('document','URL','Blob','setTimeout',script+';return {exams,exercises,mistakes,start,buildErrorReport,getMatches:()=>matchingExercises,getCurrent:()=>current};')(document,URL,Blob,fn=>fn());
 let total = 0;
 for (const [n, exercise] of state.exercises.entries()) {
  const questions = exercise.questions;
@@ -78,6 +78,32 @@ const writtenResult = els[`gap-result-${written}`];
 const writtenCount = state.exercises[written].questions.length;
 if (!writtenResult.children[0].textContent.includes(`0 из ${writtenCount}, пропущено ${writtenCount}`)) throw Error('Incorrect empty written total');
 if (writtenResult.children[1].children[0].children.some(child=>child.type==='button')) throw Error('Empty answer available for self-assessment');
-els['mode-topic'].listeners.click();els['category-select'].value='Союзы';els['category-select'].listeners.change();const visible=state.exercises.filter((e,i)=>!els['choose-'+i].hidden);if(visible.some(e=>e.topic!=='Союзы')||visible.length<2)throw Error('Topic filter failed');
+const visible = () => state.getMatches().map(i=>state.exercises[i]);
+const changeFilter = (id, value) => { els[id].value = value; els[id].listeners.change(); };
+changeFilter('exam-filter', 'Февраль 2024');
+if (visible().length !== 8 || visible().some(e=>e.exam!=='Февраль 2024')) throw Error('Exam filter failed');
+changeFilter('topic-filter', 'Предлоги');
+if (visible().length !== 1 || visible()[0]!==bank || !els['exercise-navigation'].hidden) throw Error('Filter intersection failed');
+choose(1, 'z');
+changeFilter('exam-filter', '');
+if (visible().length !== 15 || visible().some(e=>e.topic!=='Предлоги') || els['exercise-navigation'].hidden) throw Error('Topic filter failed');
+if (els[`passage-${feb}`].hidden || fields[1].value !== String(position('z'))) throw Error('Filter cleared active answer');
+const matching = state.getMatches();
+if (!els['previous-exercise'].disabled || els['next-exercise'].disabled) throw Error('Incorrect first navigation state');
+els['previous-exercise'].listeners.click();
+if (state.getCurrent()!==feb) throw Error('Navigated before first exercise');
+els['next-exercise'].listeners.click();
+if (state.getCurrent()!==matching[1] || !els[`passage-${feb}`].hidden) throw Error('Next exercise failed');
+els['previous-exercise'].listeners.click();
+if (state.getCurrent()!==feb) throw Error('Previous exercise failed');
+for (let i=1; i<matching.length; i++) els['next-exercise'].listeners.click();
+if (!els['next-exercise'].disabled || state.getCurrent()!==matching.at(-1)) throw Error('Incorrect last navigation state');
+changeFilter('topic-filter', '');
+if (visible().length !== state.exercises.length) throw Error('All/all filter failed');
+changeFilter('exam-filter', 'Февраль 2024');
+changeFilter('topic-filter', 'Структура предложения');
+if (visible().length || els['no-exercises'].hidden || !els['exercise-navigation'].hidden || !els[`passage-${feb}`].hidden) throw Error('Empty filter state failed');
+changeFilter('topic-filter', 'Предлоги');
+if (els[`passage-${feb}`].hidden || !els['no-exercises'].hidden) throw Error('Filter did not recover from empty state');
 els['download-errors'].listeners.click();if(!downloaded.parts.join('').includes('Статус: Пропущено')||!state.buildErrorReport().includes('\nИсточник:'))throw Error('Report download failed');
 console.log(`PASS: ${state.exams.length} exams, ${state.exercises.length} exercises, ${total} questions; batch feedback, shared word bank, self-assessment, restart, navigation and error export`);

@@ -1,15 +1,15 @@
 const $ = id => document.getElementById(id);
 const exercises = exams.flatMap(exam => exam.exercises.map(exercise => ({...exercise, exam: exam.label, date:exam.date, source:exam.source})));
 const mistakes = [];
-let mode = 'exam', current = 0;
+let current = null;
+let matchingExercises = [];
 const normalize = value => value.normalize('NFC').trim().toLocaleLowerCase('pl').replace(/[.!?]+$/, '').trim().replace(/\s+/g, ' ');
 function start(which) {
+  if (current !== null) $('passage-'+current).hidden = true;
   current = which;
-  exercises.forEach((e,i) => {
-    $('passage-'+i).hidden = i !== current;
-    $('choose-'+i).setAttribute('aria-pressed', String(i === current));
-  });
+  $('passage-'+current).hidden = false;
   resetInline(current);
+  updateNavigation();
 }
 
 function inlineFields(which) {
@@ -169,20 +169,68 @@ function buildErrorReport() {
     'Ответы и объяснения подготовлены для учебной проверки.', '', ...entries].join('\n');
 }
 $('download-errors').addEventListener('click',()=>{if(!mistakes.length)return;const url=URL.createObjectURL(new Blob(['\ufeff',buildErrorReport()],{type:'text/plain;charset=utf-8'}));const link=document.createElement('a');link.href=url;link.download='polski-b1-oshibki.txt';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)});
-const order=['I','II','III','IV','V','VI','VII','VIII','IX','X'];
-function showCategory(){const value=$('category-select').value;const visible=exercises.map((e,i)=>({e,i})).filter(({e})=>e[mode]===value).sort((a,b)=>a.e.exam===b.e.exam?order.indexOf(a.e.number)-order.indexOf(b.e.number):a.i-b.i);
-  exercises.forEach((e,i)=>{$('choose-'+i).hidden=true});
-  visible.forEach(({e,i})=>{const button=$('choose-'+i);button.hidden=false;button.textContent=mode==='topic'?`${e.exam} · задание ${e.number}`:`${e.number} · ${e.topic}`;$('exercise-list').append(button)});
-  if(visible.length)start(visible[0].i);
+const order = ['I','II','III','IV','V','VI','VII','VIII','IX','X'];
+function updateNavigation() {
+  const navigation = $('exercise-navigation');
+  const position = matchingExercises.indexOf(current);
+  navigation.hidden = position === -1 || matchingExercises.length < 2;
+  if (navigation.hidden) return;
+  $(`exercise-nav-slot-${current}`).append(navigation);
+  $('previous-exercise').disabled = position === 0;
+  $('next-exercise').disabled = position === matchingExercises.length - 1;
 }
-function setMode(next){mode=next;$('mode-exam').setAttribute('aria-pressed',String(mode==='exam'));$('mode-topic').setAttribute('aria-pressed',String(mode==='topic'));const caption=mode==='exam'?'Выберите экзамен':'Выберите тему';$('category-label').textContent=caption;const select=$('category-select');select.setAttribute('aria-label',caption);select.replaceChildren();[...new Set(exercises.map(e=>e[mode]))].forEach(value=>{const option=document.createElement('option');option.value=value;option.textContent=value;select.append(option)});showCategory()}
-$('mode-exam').addEventListener('click',()=>setMode('exam'));$('mode-topic').addEventListener('click',()=>setMode('topic'));$('category-select').addEventListener('change',showCategory);
+
+function moveExercise(offset) {
+  const position = matchingExercises.indexOf(current);
+  const next = matchingExercises[position + offset];
+  if (position < 0 || next === undefined) return;
+  start(next);
+  $(`exercise-title-${next}`).focus();
+}
+
+function filterExercises() {
+  const exam = $('exam-filter').value;
+  const topic = $('topic-filter').value;
+  matchingExercises = exercises.map((exercise, i) => ({exercise, i}))
+    .filter(({exercise}) => (!exam || exercise.exam === exam) && (!topic || exercise.topic === topic))
+    .sort((a, b) => a.exercise.exam === b.exercise.exam
+      ? order.indexOf(a.exercise.number) - order.indexOf(b.exercise.number) : a.i - b.i)
+    .map(({i}) => i);
+
+  $('no-exercises').hidden = matchingExercises.length !== 0;
+  if (!matchingExercises.length) {
+    if (current !== null) {
+      $('passage-'+current).hidden = true;
+      current = null;
+    }
+  } else if (!matchingExercises.includes(current)) {
+    start(matchingExercises[0]);
+  }
+  updateNavigation();
+}
+
+function populateFilter(id, key, allLabel, initialValue) {
+  const select = $(id);
+  const values = [...new Set(exercises.map(exercise => exercise[key]))];
+  for (const value of ['', ...values]) {
+    const option = document.createElement('option');
+    option.value = value;
+    option.textContent = value || allLabel;
+    select.append(option);
+  }
+  select.value = initialValue;
+  select.addEventListener('change', filterExercises);
+}
+
 exercises.forEach((e, i) => {
-  $('choose-'+i).addEventListener('click', () => start(i));
   inlineFields(i).forEach((field, j) => {
     field.addEventListener(e.questions[j].answers ? 'input' : 'change', () => updateInlineProgress(i));
   });
   $(`gap-check-${i}`).addEventListener('click', () => checkInline(i));
   $(`gap-restart-${i}`).addEventListener('click', () => start(i));
 });
-setMode('exam');
+$('previous-exercise').addEventListener('click', () => moveExercise(-1));
+$('next-exercise').addEventListener('click', () => moveExercise(1));
+populateFilter('exam-filter', 'exam', 'Все экзамены', exercises[0].exam);
+populateFilter('topic-filter', 'topic', 'Все темы', '');
+filterExercises();

@@ -79,10 +79,17 @@ def prompt_fields(exercise, fields):
     context = f'<details class="original-context"><summary>Исходный текст задания</summary><div lang="pl">{exercise["passage"]}</div></details>'
     return context + '<ol class="prompt-fields">' + ''.join(items) + '</ol>'
 
-parts=[(root/'src/head.html').read_text(encoding='utf-8'),'''<div class="browse-controls"><div class="browse-modes" role="group" aria-label="Способ выбора"><button type="button" id="mode-exam" aria-pressed="true">По экзамену</button><button type="button" id="mode-topic" aria-pressed="false">По теме</button></div><label class="browse-category"><span id="category-label">Выберите экзамен</span><select id="category-select" aria-label="Выберите экзамен"></select></label></div><nav id="exercise-list" class="exercise-select" aria-label="Выбор задания">''']
+parts=[(root/'src/head.html').read_text(encoding='utf-8'),'''<div class="browse-controls">
+    <label class="browse-category">Экзамен<select id="exam-filter"></select></label>
+    <label class="browse-category">Тема<select id="topic-filter"></select></label>
+</div>
+<p class="muted" id="no-exercises" role="status" hidden>Нет заданий для этого экзамена и темы. Попробуйте изменить фильтры.</p>
+<nav id="exercise-navigation" class="exercise-navigation" aria-label="Переход между заданиями" hidden>
+    <button id="previous-exercise" type="button">Назад</button>
+    <button id="next-exercise" type="button">Дальше</button>
+</nav>''']
 flat=[(e,x) for e in exams for x in e['exercises']]
-for i,(e,x) in enumerate(flat):parts.append(f'<button type="button" id="choose-{i}" aria-pressed="false">{esc(e["label"])} · {esc(x["number"])}</button>')
-parts.append('</nav><div class="error-export"><button type="button" id="download-errors" disabled>Скачать ошибки · 0</button><span>Ошибки хранятся до закрытия или обновления страницы.</span></div>')
+parts.append('<div class="error-export"><button type="button" id="download-errors" disabled>Скачать ошибки · 0</button><span>Ошибки хранятся до закрытия или обновления страницы.</span></div>')
 questions=sum(len(x['questions']) for _,x in flat)
 parts.append(f'<p class="muted">Варианты: {len(exams)} · Задания: {len(flat)} · Вопросы: {questions}.</p><div class="grid"><div>')
 for i, (e, x) in enumerate(flat):
@@ -95,7 +102,7 @@ for i, (e, x) in enumerate(flat):
                 f'<button class="button" type="button" id="gap-check-{i}">Проверить задание</button>'
                 f'<div id="gap-result-{i}" class="inline-results" role="status" aria-live="polite" hidden></div>'
                 f'<button class="button" type="button" id="gap-restart-{i}" hidden>Пройти ещё раз</button></div>')
-    parts.append(f'<article class="card" id="passage-{i}" hidden><div class="exam"><div class="label">{esc(e["label"])}</div><span class="pill">B1 · задание {esc(x["number"])}</span></div><h2>{esc(x.get("title",x["topic"]))}</h2>{instructions}<div class="passage">{passage}</div>{controls}<hr class="divider"><div class="source"><a href="{esc(e["source"])}" target="_blank" rel="noopener noreferrer">Оригинальный экзамен ↗</a><br>{esc(e.get("note",""))}<br>Материал Государственной комиссии по подтверждению знания польского языка. Ответы подготовлены для учебной проверки.</div></article>')
+    parts.append(f'<article class="card" id="passage-{i}" hidden><div class="exam"><div class="label">{esc(e["label"])}</div><span class="pill">B1 · задание {esc(x["number"])}</span></div><div id="exercise-nav-slot-{i}"></div><h2 id="exercise-title-{i}" tabindex="-1">{esc(x.get("title",x["topic"]))}</h2>{instructions}<div class="passage">{passage}</div>{controls}<hr class="divider"><div class="source"><a href="{esc(e["source"])}" target="_blank" rel="noopener noreferrer">Оригинальный экзамен ↗</a><br>{esc(e.get("note",""))}<br>Материал Государственной комиссии по подтверждению знания польского языка. Ответы подготовлены для учебной проверки.</div></article>')
 parts.append('</div></div>')
 sources=json.loads((root/'data/sources.json').read_text(encoding='utf-8'));parts.append(f'<details class="catalog"><summary>Все опубликованные экзамены B1 · {len(sources)} источников</summary><ul>')
 for item in sources:
