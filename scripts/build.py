@@ -1,4 +1,5 @@
 from pathlib import Path
+from collections import Counter
 import json,html,re,sys
 root=Path(__file__).resolve().parent.parent
 exams=json.loads((root/'data/legacy.json').read_text(encoding='utf-8'))
@@ -22,6 +23,12 @@ for e in exams:
         for q in x['questions']:
             assert q['sentence'] and q['explain']
             assert q.get('answers') or (q.get('options') and 0<=q['answer']<len(q['options']))
+        first_options = x['questions'][0].get('options')
+        if first_options and all(q.get('options') == first_options for q in x['questions']):
+            limits = Counter(x.get('wordBank', first_options))
+            expected = Counter(q['options'][q['answer']] for q in x['questions'])
+            assert set(limits) == set(first_options) and not expected - limits, x['id']
+            x['choiceLimits'] = limits
 if '--require-complete' in sys.argv:
     sources_check=json.loads((root/'data/sources.json').read_text(encoding='utf-8'))
     missing=[e['label'] for e in sources_check if not any(x['source']==e['source'] for x in exams)]
@@ -31,14 +38,65 @@ if '--require-complete' in sys.argv:
         if not re.search(r'dim',e['source'],re.I):
             assert {x['number']:len(x['questions']) for x in e['exercises']}==required, f'Incomplete adult exam: {e["label"]}'
 esc=lambda s:html.escape(str(s),quote=True)
+
+def answer_field(question, exercise_index, number):
+    attrs = f'class="inline-answer" id="gap-{exercise_index}-{number}" aria-label="Пропуск {number}"'
+    if question.get('manualReview'):
+        return f'<textarea {attrs} lang="pl" rows="2" placeholder="Ответ {number}"></textarea>'
+    if question.get('answers'):
+        return f'<input {attrs} type="text" lang="pl" autocomplete="off" placeholder="Ответ {number}">'
+    options = ''.join(f'<option value="{i}">{esc(option)}</option>' for i, option in enumerate(question['options']))
+    return f'<select {attrs}><option value="">{number} · …</option>{options}</select>'
+
+def inline_passage(exercise, fields):
+    if exercise['topic'] in ('Вопросительные слова', 'Преобразование предложений'):
+        return None
+    passage = exercise['passage']
+    for number, (question, field) in enumerate(zip(exercise['questions'], fields), 1):
+        circle = chr(0x245f + number)
+        patterns = [
+            rf'<span class="blank">{circle}</span>|{circle}',
+            rf'\[{number}\]|〔{number}〕',
+            rf'[._…]{{3,}}\s*(?:<sup>\s*)?{number}(?!\d)(?:\s*</sup>)?',
+        ]
+        if question.get('options'):
+            choices = r',\s*'.join(re.escape(option) for option in question['options'])
+            patterns.append(rf'\({choices}\)\s*{number}(?!\d)')
+        passage, count = re.subn('|'.join(patterns), lambda _: f' {field} ', passage)
+        if count != 1:
+            return None
+    return passage
+
+def prompt_fields(exercise, fields):
+    items = []
+    for question, field in zip(exercise['questions'], fields):
+        prompt = esc(question['sentence'])
+        if '___' in prompt and not question.get('manualReview'):
+            prompt = prompt.replace('___', f' {field} ', 1)
+        else:
+            prompt += f' <div class="prompt-answer">{field}</div>'
+        items.append(f'<li lang="pl">{prompt}</li>')
+    context = f'<details class="original-context"><summary>Исходный текст задания</summary><div lang="pl">{exercise["passage"]}</div></details>'
+    return context + '<ol class="prompt-fields">' + ''.join(items) + '</ol>'
+
 parts=[(root/'src/head.html').read_text(encoding='utf-8'),'''<div class="browse-controls"><div class="browse-modes" role="group" aria-label="Способ выбора"><button type="button" id="mode-exam" aria-pressed="true">По экзамену</button><button type="button" id="mode-topic" aria-pressed="false">По теме</button></div><label class="browse-category"><span id="category-label">Выберите экзамен</span><select id="category-select" aria-label="Выберите экзамен"></select></label></div><nav id="exercise-list" class="exercise-select" aria-label="Выбор задания">''']
 flat=[(e,x) for e in exams for x in e['exercises']]
 for i,(e,x) in enumerate(flat):parts.append(f'<button type="button" id="choose-{i}" aria-pressed="false">{esc(e["label"])} · {esc(x["number"])}</button>')
 parts.append('</nav><div class="error-export"><button type="button" id="download-errors" disabled>Скачать ошибки · 0</button><span>Ошибки хранятся до закрытия или обновления страницы.</span></div>')
 questions=sum(len(x['questions']) for _,x in flat)
 parts.append(f'<p class="muted">Варианты: {len(exams)} · Задания: {len(flat)} · Вопросы: {questions}.</p><div class="grid"><div>')
-for i,(e,x) in enumerate(flat):parts.append(f'<article class="card" id="passage-{i}" hidden><div class="exam"><div class="label">{esc(e["label"])}</div><span class="pill">B1 · задание {esc(x["number"])}</span></div><h2>{esc(x.get("title",x["topic"]))}</h2><div class="passage">{x["passage"]}</div><hr class="divider"><div class="source"><a href="{esc(e["source"])}" target="_blank" rel="noopener noreferrer">Оригинальный экзамен ↗</a><br>{esc(e.get("note",""))}<br>Материал Государственной комиссии по подтверждению знания польского языка. Ответы подготовлены для учебной проверки.</div></article>')
-parts.append('''</div><section class="card" aria-label="Практика"><div id="quiz"><div class="progress-top"><span class="label">Ваше задание</span><span class="counter" id="counter"></span></div><div class="track"><div class="fill" id="fill"></div></div><div class="eyebrow" id="number"></div><h2 class="question" id="question"></h2><p class="muted" id="answer-instruction"></p><form id="form"><div class="options" id="options"></div><div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div><button class="button" id="action" type="submit" disabled>Проверить ответ</button></form></div><div id="finish" hidden aria-live="polite"><div class="eyebrow">Задание завершено</div><h2>Практика завершена</h2><p class="muted" id="result"></p><button class="button" id="restart" type="button">Пройти ещё раз</button></div></section></div>''')
+for i, (e, x) in enumerate(flat):
+    fields = [answer_field(q, i, n) for n, q in enumerate(x['questions'], 1)]
+    passage = inline_passage(x, fields) or prompt_fields(x, fields)
+    instructions = '<p class="muted">Заполните нужные поля и проверьте задание целиком. Любое поле можно оставить пустым.</p>'
+    if x.get('choiceLimits'):
+        instructions += '<p class="muted">Выбранные варианты занимают свои места в общей рамке.</p>'
+    controls = (f'<div class="inline-controls"><p class="muted" id="gap-count-{i}"></p>'
+                f'<button class="button" type="button" id="gap-check-{i}">Проверить задание</button>'
+                f'<div id="gap-result-{i}" class="inline-results" role="status" aria-live="polite" hidden></div>'
+                f'<button class="button" type="button" id="gap-restart-{i}" hidden>Пройти ещё раз</button></div>')
+    parts.append(f'<article class="card" id="passage-{i}" hidden><div class="exam"><div class="label">{esc(e["label"])}</div><span class="pill">B1 · задание {esc(x["number"])}</span></div><h2>{esc(x.get("title",x["topic"]))}</h2>{instructions}<div class="passage">{passage}</div>{controls}<hr class="divider"><div class="source"><a href="{esc(e["source"])}" target="_blank" rel="noopener noreferrer">Оригинальный экзамен ↗</a><br>{esc(e.get("note",""))}<br>Материал Государственной комиссии по подтверждению знания польского языка. Ответы подготовлены для учебной проверки.</div></article>')
+parts.append('</div></div>')
 sources=json.loads((root/'data/sources.json').read_text(encoding='utf-8'));parts.append(f'<details class="catalog"><summary>Все опубликованные экзамены B1 · {len(sources)} источников</summary><ul>')
 for item in sources:
     e=next((e for e in exams if e['source']==item['source']),None)
