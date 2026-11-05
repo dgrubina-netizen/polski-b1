@@ -79,7 +79,7 @@ def prompt_fields(exercise, fields):
     context = f'<details class="original-context" open><summary>Исходный текст задания</summary><div lang="pl">{exercise["passage"]}</div></details>'
     return context + '<ol class="prompt-fields">' + ''.join(items) + '</ol>'
 
-parts=[(root/'src/head.html').read_text(encoding='utf-8'),'''<nav class="mode-navigation" aria-label="Раздел приложения"><button type="button" id="show-grammar" aria-pressed="true">Грамматика</button><button type="button" id="show-practice" aria-pressed="false">Самопрактика</button></nav><div id="grammar-mode"><div class="browse-controls">
+parts=[(root/'src/head.html').read_text(encoding='utf-8'),'''<nav class="mode-navigation" aria-label="Раздел приложения"><button type="button" id="show-grammar" aria-controls="grammar-mode" aria-pressed="true">Грамматика</button><button type="button" id="show-practice" aria-controls="practice-mode" aria-pressed="false">Самопрактика</button></nav><div id="grammar-mode"><div class="browse-controls">
     <label class="browse-category">Экзамен<select id="exam-filter"></select></label>
     <label class="browse-category">Тема<select id="topic-filter"></select></label>
 </div>

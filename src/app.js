@@ -268,3 +268,22 @@ function showMode(practice) {
 }
 $('show-grammar').addEventListener('click', () => showMode(false));
 $('show-practice').addEventListener('click', () => showMode(true));
+
+// Keep the selected topic section visible in the navigation while reading.
+if (typeof document.querySelectorAll === 'function') {
+  const sectionLinks = Array.from(document.querySelectorAll('.practice-index a'));
+  function markPracticeSection(id) {
+    sectionLinks.forEach(link => {
+      if (link.getAttribute('href') === '#' + id) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+  }
+  sectionLinks.forEach(link => link.addEventListener('click', () => markPracticeSection(link.getAttribute('href').slice(1))));
+  if (typeof IntersectionObserver !== 'undefined') {
+    const observer = new IntersectionObserver(entries => {
+      const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      if (visible.length && !$('practice-mode').hidden) markPracticeSection(visible[0].target.id);
+    }, {rootMargin: '-180px 0px -60% 0px'});
+    sectionLinks.forEach(link => { const section = $(link.getAttribute('href').slice(1)); if (section) observer.observe(section); });
+  }
+}
