@@ -79,7 +79,7 @@ def prompt_fields(exercise, fields):
     context = f'<details class="original-context" open><summary>Исходный текст задания</summary><div lang="pl">{exercise["passage"]}</div></details>'
     return context + '<ol class="prompt-fields">' + ''.join(items) + '</ol>'
 
-parts=[(root/'src/head.html').read_text(encoding='utf-8'),'''<nav class="mode-navigation" aria-label="Раздел приложения"><button type="button" id="show-grammar" aria-controls="grammar-mode" aria-pressed="true">Грамматика</button><button type="button" id="show-practice" aria-controls="practice-mode" aria-pressed="false">Самопрактика</button></nav><div id="grammar-mode"><div class="browse-controls">
+parts=[(root/'src/head.html').read_text(encoding='utf-8'),'''<nav class="mode-navigation" aria-label="Раздел приложения"><button type="button" id="show-grammar" aria-controls="grammar-mode" aria-pressed="true">Грамматика</button><button type="button" id="show-practice" aria-controls="practice-mode" aria-pressed="false">Samodzielna praktyka</button></nav><div id="grammar-mode"><div class="browse-controls">
     <label class="browse-category">Экзамен<select id="exam-filter"></select></label>
     <label class="browse-category">Тема<select id="topic-filter"></select></label>
 </div>
@@ -125,6 +125,9 @@ for item in sources:
 parts.append('</ul></details></div>')
 photo=base64.b64encode((root/'data/housing-photo.jpeg').read_bytes()).decode('ascii')
 practice=(root/'src/practice-housing.html').read_text(encoding='utf-8-sig').replace('__HOUSING_PHOTO__', 'data:image/jpeg;base64,'+photo)
+for number in (5,42):
+    image=base64.b64encode((root/f'data/housing-photo-{number}.jpeg').read_bytes()).decode('ascii')
+    practice=practice.replace(f'__HOUSING_PHOTO_{number}__', 'data:image/jpeg;base64,'+image)
 parts.append(practice+'</main></div>')
 payload=json.dumps(exams,ensure_ascii=False).replace('</','<\\/')
 parts.append('<script>\nconst exams='+payload+';\n'+(root/'src/app.js').read_text(encoding='utf-8-sig')+'\n</script></body></html>')

@@ -260,7 +260,9 @@ filterExercises();
 
 // Switching modes preserves the current grammar exercise and its answers.
 function showMode(practice) {
-  $('cover-mode').textContent = practice ? 'Самопрактика · B1' : 'Грамматика · B1';
+  $('cover-mode').textContent = practice ? 'Samodzielna praktyka · B1' : 'Грамматика · B1';
+  $('cover-caption').textContent = practice ? 'Polski na przykładach zadań egzaminacyjnych' : 'Польский на примерах из экзаменов';
+  $('show-grammar').textContent = practice ? 'Gramatyka' : 'Грамматика';
   $('grammar-mode').hidden = practice;
   $('practice-mode').hidden = !practice;
   $('show-grammar').setAttribute('aria-pressed', String(!practice));
