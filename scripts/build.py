@@ -1,6 +1,7 @@
 from pathlib import Path
 from collections import Counter
 import json,html,re,sys,base64
+from practice import load_topics, render_topic
 root=Path(__file__).resolve().parent.parent
 exams=json.loads((root/'data/legacy.json').read_text(encoding='utf-8'))
 for path in sorted((root/'data').glob('content-*.json')):
@@ -123,13 +124,16 @@ for item in sources:
     status=f'В квизе: {len(e["exercises"])} заданий' if e else 'В квиз ещё не добавлен'
     parts.append(f'<li><a href="{esc(item["source"])}" target="_blank" rel="noopener noreferrer">{esc(item["label"])} ↗</a><span>{status}</span></li>')
 parts.append('</ul></details></div>')
+practice_topics = load_topics(root)
 parts.append('''<section class="practice" id="practice-mode" lang="pl" hidden>
   <div class="browse-controls">
     <label class="browse-category">Temat ćwiczeń
       <select id="practice-topic-select">
         <option value="practice-housing">Dom i mieszkanie</option>
-        <option value="practice-health">Zdrowie i sport</option>
-      </select>
+        <option value="practice-health">Zdrowie i sport</option>''')
+for key, topic in practice_topics.items():
+    parts.append(f'<option value="practice-{esc(key)}">{esc(topic["title"])}</option>')
+parts.append('''</select>
     </label>
   </div>''')
 for topic in ('housing', 'health'):
@@ -140,6 +144,8 @@ for topic in ('housing', 'health'):
         practice = practice.replace(placeholder, 'data:image/jpeg;base64,' + image)
     assert not re.search(r'__[A-Z_]+PHOTO(?:_\d+)?__', practice), f'Missing photo in {topic}'
     parts.append(practice)
+for key, topic in practice_topics.items():
+    parts.append(render_topic(root, key, topic))
 parts.append('</section></main></div>')
 payload=json.dumps(exams,ensure_ascii=False).replace('</','<\\/')
 parts.append('<script>\nconst exams='+payload+';\n'+(root/'src/app.js').read_text(encoding='utf-8-sig')+'\n</script></body></html>')
