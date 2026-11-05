@@ -123,12 +123,24 @@ for item in sources:
     status=f'В квизе: {len(e["exercises"])} заданий' if e else 'В квиз ещё не добавлен'
     parts.append(f'<li><a href="{esc(item["source"])}" target="_blank" rel="noopener noreferrer">{esc(item["label"])} ↗</a><span>{status}</span></li>')
 parts.append('</ul></details></div>')
-photo=base64.b64encode((root/'data/housing-photo.jpeg').read_bytes()).decode('ascii')
-practice=(root/'src/practice-housing.html').read_text(encoding='utf-8-sig').replace('__HOUSING_PHOTO__', 'data:image/jpeg;base64,'+photo)
-for number in (5,42):
-    image=base64.b64encode((root/f'data/housing-photo-{number}.jpeg').read_bytes()).decode('ascii')
-    practice=practice.replace(f'__HOUSING_PHOTO_{number}__', 'data:image/jpeg;base64,'+image)
-parts.append(practice+'</main></div>')
+parts.append('''<section class="practice" id="practice-mode" lang="pl" hidden>
+  <div class="browse-controls">
+    <label class="browse-category">Temat ćwiczeń
+      <select id="practice-topic-select">
+        <option value="practice-housing">Dom i mieszkanie</option>
+        <option value="practice-health">Zdrowie i sport</option>
+      </select>
+    </label>
+  </div>''')
+for topic in ('housing', 'health'):
+    practice = (root/f'src/practice-{topic}.html').read_text(encoding='utf-8-sig')
+    for photo_path in sorted((root/'data').glob(f'{topic}-photo*.jpeg')):
+        placeholder = '__' + photo_path.stem.upper().replace('-', '_') + '__'
+        image = base64.b64encode(photo_path.read_bytes()).decode('ascii')
+        practice = practice.replace(placeholder, 'data:image/jpeg;base64,' + image)
+    assert not re.search(r'__[A-Z_]+PHOTO(?:_\d+)?__', practice), f'Missing photo in {topic}'
+    parts.append(practice)
+parts.append('</section></main></div>')
 payload=json.dumps(exams,ensure_ascii=False).replace('</','<\\/')
 parts.append('<script>\nconst exams='+payload+';\n'+(root/'src/app.js').read_text(encoding='utf-8-sig')+'\n</script></body></html>')
 output='\n'.join(parts).replace('</style>','[hidden]{display:none!important}</style>')

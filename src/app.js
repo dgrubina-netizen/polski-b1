@@ -273,6 +273,8 @@ $('show-practice').addEventListener('click', () => showMode(true));
 
 // Keep the selected topic section visible in the navigation while reading.
 if (typeof document.querySelectorAll === 'function') {
+  const topicSelect = $('practice-topic-select');
+  const practiceTopics = document.querySelectorAll('.practice-topic');
   const sectionLinks = Array.from(document.querySelectorAll('.practice-index a'));
   function markPracticeSection(id) {
     sectionLinks.forEach(link => {
@@ -280,10 +282,17 @@ if (typeof document.querySelectorAll === 'function') {
       else link.removeAttribute('aria-current');
     });
   }
+  topicSelect.addEventListener('change', () => {
+    for (const topic of practiceTopics) topic.hidden = topic.id !== topicSelect.value;
+    const firstLink = $(topicSelect.value).querySelector('.practice-index a');
+    markPracticeSection(firstLink.hash.slice(1));
+  });
   sectionLinks.forEach(link => link.addEventListener('click', () => markPracticeSection(link.getAttribute('href').slice(1))));
   if (typeof IntersectionObserver !== 'undefined') {
     const observer = new IntersectionObserver(entries => {
-      const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      const visible = entries
+        .filter(entry => entry.isIntersecting && !entry.target.closest('.practice-topic').hidden)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
       if (visible.length && !$('practice-mode').hidden) markPracticeSection(visible[0].target.id);
     }, {rootMargin: '-180px 0px -60% 0px'});
     sectionLinks.forEach(link => { const section = $(link.getAttribute('href').slice(1)); if (section) observer.observe(section); });
