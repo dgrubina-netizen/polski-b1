@@ -257,3 +257,14 @@ $('next-exercise').addEventListener('click', () => moveExercise(1));
 populateFilter('exam-filter', 'exam', 'Все экзамены', exercises[0].exam);
 populateFilter('topic-filter', 'topic', 'Все темы', '');
 filterExercises();
+
+// Switching modes preserves the current grammar exercise and its answers.
+function showMode(practice) {
+  $('cover-mode').textContent = practice ? 'Самопрактика · B1' : 'Грамматика · B1';
+  $('grammar-mode').hidden = practice;
+  $('practice-mode').hidden = !practice;
+  $('show-grammar').setAttribute('aria-pressed', String(!practice));
+  $('show-practice').setAttribute('aria-pressed', String(practice));
+}
+$('show-grammar').addEventListener('click', () => showMode(false));
+$('show-practice').addEventListener('click', () => showMode(true));

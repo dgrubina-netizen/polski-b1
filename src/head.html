@@ -20,8 +20,10 @@
   background: #fff;
 }
 * { box-sizing: border-box; }
-body { margin: 0; }
+body { margin: 0; background: #fff; color: var(--ink); }
 .shell {
+  background: #fff;
+  color: var(--ink);
   --accent: #245ab5;
   --tint: #edf5ff;
   --edge: #8fb2e4;
@@ -207,6 +209,30 @@ button:disabled { opacity: .5; cursor: default; }
   from { opacity: 0; transform: translateY(5px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+.mode-navigation { display:flex; gap:8px; margin:24px 0 18px; border-bottom:1px solid var(--line); }
+.mode-navigation button { border:0; border-bottom:3px solid transparent; background:none; color:var(--muted); padding:12px 16px; font:600 15px/1.3 system-ui,sans-serif; cursor:pointer; min-height:48px; }
+.mode-navigation button[aria-pressed="true"] { color:var(--accent); border-bottom-color:var(--accent); }
+.practice-intro, .practice-block { padding:clamp(18px,4vw,36px); border:1px solid var(--line); background:#fff; margin:16px 0; }
+.practice-intro { background:var(--wash); }
+.practice-intro h2, .practice-block h2 { margin:6px 0 12px; }
+.practice-label { color:var(--accent); font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+.practice-index { display:flex; flex-wrap:wrap; gap:8px 18px; padding:8px 0; }
+.practice-index a { color:var(--accent); padding:8px 0; }
+.phrase-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%, 270px),1fr)); gap:0 24px; }
+.phrase-list div { padding:12px 0; border-bottom:1px solid var(--line); }
+.phrase-list dt { font-weight:650; }
+.phrase-list dd { margin:5px 0 0; color:var(--muted); font-size:14px; }
+.practice-block p, .practice-block li { line-height:1.65; }
+.reading { padding:10px 0 18px; border-bottom:1px solid var(--line); }
+.reading:last-child { border:0; }
+.reading details, .practice-block details { color:var(--muted); }
+.practice-block summary { color:var(--accent); font-weight:600; padding:8px 0; }
+.housing-photo { display:block; width:100%; max-width:750px; height:auto; }
+.self-check { display:grid; gap:12px; }
+.self-check label { display:flex; gap:10px; align-items:baseline; }
+.self-check input { accent-color:var(--accent); }
+
 </style>
 </head>
 <body>
@@ -228,7 +254,7 @@ button:disabled { opacity: .5; cursor: default; }
   <main class="content">
     <section class="cover">
       <div class="cover-copy">
-        <p class="cover-kicker">Грамматика · B1</p>
+        <p class="cover-kicker" id="cover-mode">Грамматика · B1</p>
         <h1 lang="pl">Polski <em>w praktyce.</em></h1>
         <p class="cover-caption">Польский на примерах из экзаменов</p>
       </div>

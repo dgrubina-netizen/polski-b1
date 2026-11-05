@@ -1,6 +1,6 @@
 from pathlib import Path
 from collections import Counter
-import json,html,re,sys
+import json,html,re,sys,base64
 root=Path(__file__).resolve().parent.parent
 exams=json.loads((root/'data/legacy.json').read_text(encoding='utf-8'))
 for path in sorted((root/'data').glob('content-*.json')):
@@ -79,7 +79,7 @@ def prompt_fields(exercise, fields):
     context = f'<details class="original-context" open><summary>Исходный текст задания</summary><div lang="pl">{exercise["passage"]}</div></details>'
     return context + '<ol class="prompt-fields">' + ''.join(items) + '</ol>'
 
-parts=[(root/'src/head.html').read_text(encoding='utf-8'),'''<div class="browse-controls">
+parts=[(root/'src/head.html').read_text(encoding='utf-8'),'''<nav class="mode-navigation" aria-label="Раздел приложения"><button type="button" id="show-grammar" aria-pressed="true">Грамматика</button><button type="button" id="show-practice" aria-pressed="false">Самопрактика</button></nav><div id="grammar-mode"><div class="browse-controls">
     <label class="browse-category">Экзамен<select id="exam-filter"></select></label>
     <label class="browse-category">Тема<select id="topic-filter"></select></label>
 </div>
@@ -122,7 +122,10 @@ for item in sources:
     e=next((e for e in exams if e['source']==item['source']),None)
     status=f'В квизе: {len(e["exercises"])} заданий' if e else 'В квиз ещё не добавлен'
     parts.append(f'<li><a href="{esc(item["source"])}" target="_blank" rel="noopener noreferrer">{esc(item["label"])} ↗</a><span>{status}</span></li>')
-parts.append('</ul></details></main></div>')
+parts.append('</ul></details></div>')
+photo=base64.b64encode((root/'data/housing-photo.jpeg').read_bytes()).decode('ascii')
+practice=(root/'src/practice-housing.html').read_text(encoding='utf-8-sig').replace('__HOUSING_PHOTO__', 'data:image/jpeg;base64,'+photo)
+parts.append(practice+'</main></div>')
 payload=json.dumps(exams,ensure_ascii=False).replace('</','<\\/')
 parts.append('<script>\nconst exams='+payload+';\n'+(root/'src/app.js').read_text(encoding='utf-8-sig')+'\n</script></body></html>')
 output='\n'.join(parts).replace('</style>','[hidden]{display:none!important}</style>')
